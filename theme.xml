@@ -1,0 +1,594 @@
+<!--
+ES-DE Theme Adroit
+by Rick
+CC-BY-NC-SA
+Modified from Anthony Caccese's Terminal (ES-DE Edition)
+-->
+
+<theme>
+
+   <view name="system,gamelist">
+      <image name="background">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <path>./files/background.svg</path>
+          <tile>false</tile>
+          <zIndex>1</zIndex>
+      </image>    
+      <textlist name="list">
+         <indicators>ascii</indicators>
+         <collectionIndicators>ascii</collectionIndicators>
+         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+         <selectorColor>00000000</selectorColor>
+      </textlist>
+      <image name="Syslogo">
+         <path>./files/logos/${system.theme}.svg</path>
+         <pos>0.8125 0.91</pos>
+         <origin>0.5 1</origin>
+         <maxSize>0.25 0.15</maxSize>
+         <color>434242</color>
+      </image>
+   </view>
+   
+   <view name="gamelist">
+      <text name="system-name">
+         <text>${system.fullName}</text>
+      </text>
+      <video name="video">
+         <delay>5</delay>
+         <imageType>cover,screenshot,titlescreen</imageType>
+         <pillarboxes>false</pillarboxes>
+         <zIndex>50</zIndex>
+      </video>
+   </view>
+
+   <variant name="Light">
+   
+      <variables>
+         <bodyFont>./files/akashi.ttf</bodyFont>
+      </variables>
+      
+      <view name="system,gamelist">
+<!--
+        <text name="header">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.035</pos>
+            <text>**** HEADER TEXT ****</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.03</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <color>dbdbdb</color>  
+         </text>
+-->
+         <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.95</pos>
+            <fontSize>0.025</fontSize>
+            <textColor>F3EFE0</textColor>
+            <iconColor>F3EFE0</iconColor>
+            <fontPath>${bodyFont}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <textlist name="list">
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <selectedColor>F3EFE0</selectedColor>
+            <selectedBackgroundColor>434242</selectedBackgroundColor>
+            <primaryColor>222222</primaryColor>
+            <secondaryColor>434242</secondaryColor>
+         </textlist>
+      </view>
+
+
+
+         
+      <view name="gamelist">
+         <text name="system-name">
+            <text>${system.fullName}</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <text name="prompt"><!-- need to remove this without it defaulting back to `Systems` prompt -->
+            <text>.</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.000000000000000000000000000000000000</fontSize>
+            <color>232323</color>
+         </text>         
+         <video name="video">
+            <origin>1 1</origin>
+         </video>
+      </view>
+      
+      
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.5 0.75</size><!--width height-->
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.9296875 0.75</pos>
+               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+   </variant>
+   
+   
+   
+   <variant name="Dark">
+   
+      <variables>
+         <bodyFont>./files/akashi.ttf</bodyFont>
+      </variables>
+      
+      <view name="system,gamelist">
+
+         <image name="background">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./files/background-dark.svg</path>
+            <tile>false</tile>
+            <zIndex>1</zIndex>
+         </image>  
+      
+         <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.95</pos>
+            <fontSize>0.025</fontSize>
+            <textColor>F3EFE0</textColor>
+            <iconColor>F3EFE0</iconColor>
+            <fontPath>${bodyFont}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <textlist name="list">
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <selectedColor>434242</selectedColor>
+            <selectedBackgroundColor>F3EFE0</selectedBackgroundColor>
+            <primaryColor>F3EFE0</primaryColor>
+            <secondaryColor>222222</secondaryColor>
+         </textlist>
+      <image name="Syslogo">
+         <color>F3EFE0</color>
+      </image>
+      </view>
+      
+      <view name="gamelist">
+         <text name="system-name">
+            <text>${system.fullName}</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <text name="prompt"><!-- need to remove this without it defaulting back to `Systems` prompt -->
+            <text>.</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.000000000000000000000000000000000000</fontSize>
+            <color>232323</color>
+         </text>         
+         <video name="video">
+            <origin>1 1</origin>
+         </video>
+      </view>
+      
+      
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.5 0.75</size><!--width height-->
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.9296875 0.75</pos>
+               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+   </variant>  
+   
+   
+   
+   
+
+   <variant name="LightNoArt">
+   
+      <variables>
+         <bodyFont>./files/akashi.ttf</bodyFont>
+      </variables>
+         
+      <view name="system,gamelist">
+         <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.95</pos>
+            <fontSize>0.025</fontSize>
+            <textColor>F3EFE0</textColor>
+            <iconColor>F3EFE0</iconColor>
+            <fontPath>${bodyFont}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <textlist name="list">
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <selectedColor>F3EFE0</selectedColor>
+            <selectedBackgroundColor>434242</selectedBackgroundColor>
+            <primaryColor>222222</primaryColor>
+            <secondaryColor>434242</secondaryColor>
+         </textlist>
+         <image name="Syslogo">
+            <visible>false</visible>
+         </image>
+      </view>
+      
+      <view name="gamelist">
+         <text name="system-name">
+            <text>${system.fullName}</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <text name="prompt"><!-- need to remove this without it defaulting back to `Systems` prompt -->
+            <text>.</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.000000000000000000000000000000000000</fontSize>
+            <color>232323</color>
+         </text>         
+         <video name="video">
+            <origin>1 1</origin>
+            <audio>false</audio>
+            <visible>false</visible>
+         </video>
+
+      </view>
+      
+      
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.5 0.75</size><!--width height-->
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.9296875 0.75</pos>
+               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+   </variant>
+   
+
+
+   <variant name="DarkNoArt">
+   
+      <variables>
+         <bodyFont>./files/akashi.ttf</bodyFont>
+      </variables>
+      
+      <view name="system,gamelist">
+
+          <image name="background">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./files/background-dark.svg</path>
+            <tile>false</tile>
+            <zIndex>1</zIndex>
+         </image>  
+      
+         <helpsystem name="help">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.95</pos>
+            <fontSize>0.025</fontSize>
+            <textColor>F3EFE0</textColor>
+            <iconColor>F3EFE0</iconColor>
+            <fontPath>${bodyFont}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <textlist name="list">
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <selectedColor>434242</selectedColor>
+            <selectedBackgroundColor>F3EFE0</selectedBackgroundColor>
+            <primaryColor>F3EFE0</primaryColor>
+            <secondaryColor>222222</secondaryColor>
+         </textlist>
+         <image name="Syslogo">
+            <visible>false</visible>
+         </image>
+      </view>
+      
+      <view name="gamelist">
+         <text name="system-name">
+            <text>${system.fullName}</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>F3EFE0</color>
+         </text>
+         <text name="prompt"><!-- need to remove this without it defaulting back to `Systems` prompt -->
+            <text>.</text>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.000000000000000000000000000000000000</fontSize>
+            <color>232323</color>
+         </text>         
+         <video name="video">
+            <!--<origin>1 1</origin>-->
+            <visible>false</visible>
+         </video>
+      </view>
+      
+      
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.5 0.75</size><!--width height-->
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.9296875 0.75</pos>
+               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.5 0.75</size>
+            </textlist>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <video name="video">
+               <pos>0.921875 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+   </variant> 
+
+</theme>
+
+<!-- 
+white
+F3EFE0
+gray
+434242
+black
+222222
+
+v2
+white
+D8D9DA
+gray
+61677A
+black
+272829
+-->
