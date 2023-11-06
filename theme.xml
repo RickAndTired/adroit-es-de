@@ -43,12 +43,13 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       </video>
    </view>
 
-   <variant name="Light">
-   
       <variables>
          <bodyFont>./files/akashi.ttf</bodyFont>
       </variables>
       
+      
+   <variant name="Light">
+  
       <view name="system,gamelist">
 <!--
         <text name="header">
@@ -179,10 +180,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
    
    
    <variant name="Dark">
-   
-      <variables>
-         <bodyFont>./files/akashi.ttf</bodyFont>
-      </variables>
       
       <view name="system,gamelist">
 
@@ -315,11 +312,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
    
 
    <variant name="LightNoArt">
-   
-      <variables>
-         <bodyFont>./files/akashi.ttf</bodyFont>
-      </variables>
-         
+
       <view name="system,gamelist">
          <helpsystem name="help">
             <origin>0.5 0</origin>
@@ -442,11 +435,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
 
 
    <variant name="DarkNoArt">
-   
-      <variables>
-         <bodyFont>./files/akashi.ttf</bodyFont>
-      </variables>
-      
+
       <view name="system,gamelist">
 
           <image name="background">
