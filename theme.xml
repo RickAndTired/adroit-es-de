@@ -128,7 +128,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <video name="video">
-               <pos>0.921875 0.75</pos><!-- 1062 630 -->
+               <pos>0.94 0.75</pos><!-- 1062 630 -->
                <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
             </video>
          </view>
@@ -151,7 +151,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <video name="video">
-               <pos>0.921875 0.75</pos><!-- 870 630 -->
+               <pos>0.965 0.75</pos><!-- 870 630 -->
                <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
             </video>
          </view>
