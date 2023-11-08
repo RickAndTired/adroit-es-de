@@ -83,7 +83,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <badges name="badges">
          <lines>1</lines>
          <itemsPerLine>9</itemsPerLine>
-         <slots>collection, folder, favorite, completed, kidgame, broken, altemulator, manual</slots>
+         <slots>broken, favorite, completed, manual, kidgame, altemulator, collection</slots>
          <customBadgeIcon badge="folder">./files/images/badge-folder.svg</customBadgeIcon>
          <customBadgeIcon badge="broken">./files/images/badge-broken.svg</customBadgeIcon>
          <customBadgeIcon badge="completed">./files/images/badge-completed.svg</customBadgeIcon>
