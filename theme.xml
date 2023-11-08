@@ -74,11 +74,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <fontSize>0.05</fontSize>
          <color>F3EFE0</color>
       </text>
-      <text name="prompt"><!-- need to remove this without it defaulting back to `Systems` prompt -->
-         <text>.</text>
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.000000000000000000000000000000000000</fontSize>
-         <color>232323</color>
+      <text name="prompt">
+         <visible>false</visible>
       </text>
       <badges name="badges">
          <lines>1</lines>
