@@ -94,7 +94,9 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <fontPath>${bodyFont}</fontPath>
          <fontSize>0.05</fontSize>
          <color>F3EFE0</color>
+         <metadata>systemFullname</metadata>
       </text>
+
       <badges name="badges">
          <lines>1</lines>
          <itemsPerLine>9</itemsPerLine>
