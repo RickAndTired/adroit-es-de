@@ -6,7 +6,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
 -->
 
 <theme>
-   <include>./files/system-metadata-master/${system.theme}.xml</include>
+   <!--<include>./files/system-metadata-master/${system.theme}.xml</include>-->
    <variables>
       <bodyFont>./files/akashi.ttf</bodyFont>
    </variables>
