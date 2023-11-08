@@ -6,7 +6,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
 -->
 
 <theme>
-
+   <include>./files/system-metadata-master/${system.theme}.xml</include>
    <variables>
       <bodyFont>./files/akashi.ttf</bodyFont>
    </variables>
@@ -57,25 +57,43 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <textColor>F3EFE0</textColor>
             <iconColor>F3EFE0</iconColor>
             <fontPath>${bodyFont}</fontPath>
-         </helpsystem>
+         </helpsystem>   
+   </view>
+
+   <view name="system">
          <text name="prompt">
             <text>Systems</text>
             <fontPath>${bodyFont}</fontPath>
             <fontSize>0.05</fontSize>
             <color>F3EFE0</color>
-         </text>      
+         </text>  
+<!--  
+         <text name="description"> 
+            <origin>1 1</origin>
+            <size>0.25 0.5</size>
+            <pos>0.9425 0.75</pos>
+            <fontPath>${bodyFont}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>F3EFE0</color>
+            <text>${systemDescription}</text>
+         </text>  
+-->    
+         <image name="controller">
+            <origin>0.5 0.5</origin>
+            <maxSize>0.25 0.5</maxSize>
+            <pos>0.815 0.5</pos>
+            <color>F3EFE0</color>
+            <path>./files/system-controllers/${system.theme}.svg</path>
+         </image>
+
    </view>
-
-
+   
    <view name="gamelist">
       <text name="system-name">
          <text>${system.fullName}</text>
          <fontPath>${bodyFont}</fontPath>
          <fontSize>0.05</fontSize>
          <color>F3EFE0</color>
-      </text>
-      <text name="prompt">
-         <visible>false</visible>
       </text>
       <badges name="badges">
          <lines>1</lines>
