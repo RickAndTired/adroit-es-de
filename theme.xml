@@ -98,7 +98,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <origin>1 0</origin>
          <horizontalAlignment>center</horizontalAlignment>
          <direction>column</direction>
-         <pos>0.99 0.25</pos><!-- 1382 50 -->
+         <pos>0.99 0.25</pos>
          <size>0.05 0.5</size>
          <itemMargin>-1 0.0075</itemMargin> 
          <rotation>180</rotation>
