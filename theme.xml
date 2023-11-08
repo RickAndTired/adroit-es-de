@@ -82,7 +82,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <origin>0.5 0.5</origin>
             <maxSize>0.25 0.5</maxSize>
             <pos>0.815 0.5</pos>
-            <color>F3EFE0</color>
+            <color>434242</color>
             <path>./files/system-controllers/${system.theme}.svg</path>
          </image>
 
@@ -226,6 +226,11 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <color>F3EFE0</color>
          </image>
       </view>
+      <view name="system">
+         <image name="controller">
+            <color>F3EFE0</color>
+         </image>
+      </view>
       <view name="gamelist">
          <text name="system-name">
             <color>F3EFE0</color>
@@ -278,6 +283,11 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          </textlist>
          <image name="Syslogo">
             <visible>true</visible>
+            <color>F3EFE0</color>
+         </image>
+      </view>
+      <view name="system">
+         <image name="controller">
             <color>F3EFE0</color>
          </image>
       </view>
