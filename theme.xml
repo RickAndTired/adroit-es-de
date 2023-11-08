@@ -127,6 +127,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <imageType>cover,screenshot,titlescreen</imageType>
          <pillarboxes>false</pillarboxes>
          <zIndex>50</zIndex>
+         <defaultImage>./files/system-controllers/${system.theme}.svg</defaultImage>
       </video>
    </view>
 
@@ -205,6 +206,9 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <image name="controller">
             <visible>false</visible>
          </image>
+         <video name="video">
+            <defaultImage>./files/system-controllers-light/${system.theme}.svg</defaultImage>
+         </video>
       </view>
    </variant>  
    
