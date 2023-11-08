@@ -22,8 +22,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       </image>    
       <textlist name="list">
          <!--<indicators>symbols</indicators>
-         <collectionIndicators>ascii</collectionIndicators>
-         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>-->
+         <collectionIndicators>ascii</collectionIndicators>-->
          <selectorColor>00000000</selectorColor>
          <fontPath>${bodyFont}</fontPath>
          <fontSize>0.025</fontSize>
@@ -31,7 +30,16 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <selectedBackgroundColor>434242</selectedBackgroundColor>
          <primaryColor>222222</primaryColor>
          <secondaryColor>434242</secondaryColor>
+         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+         <letterCaseCustomCollections>capitalize</letterCaseCustomCollections>
          </textlist>
+      <image name="controller">
+        <origin>0.5 0.5</origin>
+        <maxSize>0.25 0.5</maxSize>
+        <pos>0.815 0.5</pos>
+        <color>434242</color>
+        <path>./files/system-controllers/${system.theme}.svg</path>
+      </image>
       <image name="Syslogo">
          <path>./files/logos/${system.theme}.svg</path>
          <pos>0.8125 0.91</pos>
@@ -78,14 +86,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <text>${systemDescription}</text>
          </text>  
 -->    
-         <image name="controller">
-            <origin>0.5 0.5</origin>
-            <maxSize>0.25 0.5</maxSize>
-            <pos>0.815 0.5</pos>
-            <color>434242</color>
-            <path>./files/system-controllers/${system.theme}.svg</path>
-         </image>
-
    </view>
    
    <view name="gamelist">
@@ -199,6 +199,11 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
  
  
    <variant name="Light">
+      <view name="gamelist">
+         <image name="controller">
+            <visible>false</visible>
+         </image>
+      </view>
    </variant>  
    
    
@@ -222,19 +227,20 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <primaryColor>F3EFE0</primaryColor>
             <secondaryColor>222222</secondaryColor>
          </textlist>
-         <image name="Syslogo">
+         <image name="controller">
             <color>F3EFE0</color>
          </image>
-      </view>
-      <view name="system">
-         <image name="controller">
+         <image name="Syslogo">
             <color>F3EFE0</color>
          </image>
       </view>
       <view name="gamelist">
          <text name="system-name">
             <color>F3EFE0</color>
-         </text> 
+         </text>
+      <image name="controller">
+         <visible>false</visible>
+      </image>
       <badges name="badges">
          <badgeIconColor>F3EFE0</badgeIconColor>
       </badges>
@@ -280,6 +286,9 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <text name="prompt">
             <color>F3EFE0</color>
          </text>
+         <image name="controller">
+            <color>F3EFE0</color>
+         </image>
          <textlist name="list">
             <selectedColor>434242</selectedColor>
             <selectedBackgroundColor>F3EFE0</selectedBackgroundColor>
@@ -291,15 +300,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <color>F3EFE0</color>
          </image>
       </view>
-      <view name="system">
-         <image name="controller">
-            <color>F3EFE0</color>
-         </image>
-      </view>
       <view name="gamelist">
-         <text name="system-name">
-            <color>F3EFE0</color>
-         </text>
          <badges name="badges">
             <badgeIconColor>F3EFE0</badgeIconColor>
             <visible>true</visible>
