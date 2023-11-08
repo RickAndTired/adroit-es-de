@@ -99,6 +99,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <size>0.05 0.5</size>
          <itemMargin>-1 0.0075</itemMargin> 
          <rotation>180</rotation>
+         <badgeIconColor>434242</badgeIconColor>
       </badges>
       <video name="video">
          <origin>1 1</origin>
@@ -210,7 +211,10 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <view name="gamelist">
          <text name="system-name">
             <color>F3EFE0</color>
-         </text>  
+         </text> 
+      <badges name="badges">
+         <badgeIconColor>F3EFE0</badgeIconColor>
+      </badges>
       </view>
    </variant>  
    
@@ -223,7 +227,10 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          </image>
       </view>
       
-      <view name="gamelist">      
+      <view name="gamelist"> 
+         <badges name="badges">
+            <visible>false</visible>
+         </badges>
          <video name="video">
             <visible>false</visible>
          </video>
@@ -260,6 +267,10 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <text name="system-name">
             <color>F3EFE0</color>
          </text>
+         <badges name="badges">
+            <badgeIconColor>F3EFE0</badgeIconColor>
+            <visible>false</visible>
+         </badges>
          <video name="video">
             <visible>false</visible>
          </video>
