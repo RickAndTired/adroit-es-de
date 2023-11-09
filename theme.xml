@@ -34,9 +34,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <letterCaseCustomCollections>capitalize</letterCaseCustomCollections>
          </textlist>
       <image name="controller">
+<!--    Center Right controller position
         <origin>0.5 0.5</origin>
         <maxSize>0.25 0.5</maxSize>
         <pos>0.815 0.5</pos>
+-->      
+        <origin>1 1</origin>
+        <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+        <pos>0.9296875 0.75</pos>
         <color>434242</color>
         <path>./files/system-controllers/${system.theme}.svg</path>
       </image>
@@ -58,14 +63,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <color>dbdbdb</color>  
          </text>
 -->      
-         <helpsystem name="help">
-            <origin>0.5 0</origin>
-            <pos>0.5 0.95</pos>
-            <fontSize>0.025</fontSize>
-            <textColor>F3EFE0</textColor>
-            <iconColor>F3EFE0</iconColor>
-            <fontPath>${bodyFont}</fontPath>
-         </helpsystem>   
+      <helpsystem name="help">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.95</pos>
+         <fontSize>0.025</fontSize>
+         <textColor>F3EFE0</textColor>
+         <iconColor>F3EFE0</iconColor>
+         <fontPath>${bodyFont}</fontPath>
+      </helpsystem>   
    </view>
 
    <view name="system">
@@ -140,12 +145,19 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.15</pos><!--horizontal vertical-->
                <size>0.5 0.75</size><!--width height-->
             </textlist>
+            <image name="controller">
+               <pos>0.9296875 0.75</pos>
+               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+            </image>
          </view>
          <view name="gamelist">
             <text name="system-name">
                <pos>0.07 0.015</pos>
                <letterCase>uppercase</letterCase>
             </text>
+            <badges name="badges">
+               <pos>0.99 0.25</pos>
+            </badges>
             <video name="video">
                <pos>0.9296875 0.75</pos>
                <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
@@ -163,12 +175,19 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.15</pos>
                <size>0.5 0.75</size>
             </textlist>
+            <image name="controller">
+               <pos>0.94 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+            </image>
          </view>
          <view name="gamelist">
             <text name="system-name">
                <pos>0.07 0.015</pos>
                <letterCase>uppercase</letterCase>
             </text>
+            <badges name="badges">
+               <pos>0.99 0.25</pos>
+            </badges>
             <video name="video">
                <pos>0.94 0.75</pos><!-- 1062 630 -->
                <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
@@ -186,12 +205,19 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.15</pos>
                <size>0.5 0.75</size>
             </textlist>
+            <image name="controller">
+               <pos>0.965 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+            </image>
          </view>
          <view name="gamelist">
             <text name="system-name">
                <pos>0.07 0.0125</pos>
                <letterCase>uppercase</letterCase>
             </text>
+            <badges name="badges">
+               <pos>0.99 0.25</pos>
+            </badges>
             <video name="video">
                <pos>0.965 0.75</pos><!-- 870 630 -->
                <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
