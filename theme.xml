@@ -8,7 +8,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
 <theme>
    <!--<include>./files/system-metadata-master/${system.theme}.xml</include>-->
    <variables>
-      <bodyFont>./files/akashi.ttf</bodyFont>
+      <font>./files/akashi.ttf</font>
+      <white>F3EFE0</white>
+      <gray>434242</gray>
+      <black>222222</black>
+      <white2>D8D9DA</white2>
+      <gray2>61677A</gray2>
+      <black2>272829</black2>
+      <manila>fff0cf</manila>
    </variables>
 
    <view name="system,gamelist">
@@ -24,12 +31,12 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <!--<indicators>symbols</indicators>
          <collectionIndicators>ascii</collectionIndicators>-->
          <selectorColor>00000000</selectorColor>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${font}</fontPath>
          <fontSize>0.025</fontSize>
-         <selectedColor>F3EFE0</selectedColor>
-         <selectedBackgroundColor>434242</selectedBackgroundColor>
-         <primaryColor>222222</primaryColor>
-         <secondaryColor>434242</secondaryColor>
+         <selectedColor>${white}</selectedColor>
+         <selectedBackgroundColor>${gray}</selectedBackgroundColor>
+         <primaryColor>${black}</primaryColor>
+         <secondaryColor>${gray}</secondaryColor>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
          <letterCaseCustomCollections>capitalize</letterCaseCustomCollections>
          </textlist>
@@ -42,7 +49,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
         <origin>1 1</origin>
         <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
         <pos>0.9296875 0.75</pos>
-        <color>434242</color>
+        <color>${gray}</color>
         <path>./files/system-controllers/${system.theme}.svg</path>
       </image>
       <image name="Syslogo">
@@ -50,14 +57,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <pos>0.8125 0.91</pos>
          <origin>0.5 1</origin>
          <maxSize>0.25 0.15</maxSize>
-         <color>434242</color>
+         <color>${gray}</color>
       </image>    
 <!--
         <text name="header">
             <origin>0.5 0</origin>
             <pos>0.5 0.035</pos>
             <text>**** HEADER TEXT ****</text>
-            <fontPath>${bodyFont}</fontPath>
+            <fontPath>${font}</fontPath>
             <fontSize>0.03</fontSize>
             <lineSpacing>1</lineSpacing>
             <color>dbdbdb</color>  
@@ -67,27 +74,27 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <origin>0.5 0</origin>
          <pos>0.5 0.95</pos>
          <fontSize>0.025</fontSize>
-         <textColor>F3EFE0</textColor>
-         <iconColor>F3EFE0</iconColor>
-         <fontPath>${bodyFont}</fontPath>
+         <textColor>${white}</textColor>
+         <iconColor>${white}</iconColor>
+         <fontPath>${font}</fontPath>
       </helpsystem>   
    </view>
 
    <view name="system">
          <text name="prompt">
             <text>Systems</text>
-            <fontPath>${bodyFont}</fontPath>
+            <fontPath>${font}</fontPath>
             <fontSize>0.05</fontSize>
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </text>  
 <!--  
          <text name="description"> 
             <origin>1 1</origin>
             <size>0.25 0.5</size>
             <pos>0.9425 0.75</pos>
-            <fontPath>${bodyFont}</fontPath>
+            <fontPath>${font}</fontPath>
             <fontSize>0.02</fontSize>
-            <color>F3EFE0</color>
+            <color>${white}</color>
             <text>${systemDescription}</text>
          </text>  
 -->    
@@ -97,12 +104,22 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
    
       <text name="system-name">
          <text>${system.fullName}</text>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${font}</fontPath>
          <fontSize>0.05</fontSize>
-         <color>F3EFE0</color>
+         <color>${white}</color>
          <metadata>systemFullname</metadata>
       </text>
+<!--   
+      <text name="rating">
+         <metadata>rating</metadata>
+         <defaultValue>:space:</defaultValue>
+      </text>
 
+      <text name="players">
+         <metadata>players</metadata>
+         <defaultValue>:space:</defaultValue>
+      </text>
+     --> 
       <badges name="badges">
          <lines>1</lines>
          <itemsPerLine>9</itemsPerLine>
@@ -124,9 +141,9 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <size>0.05 0.5</size>
          <itemMargin>-1 0.0075</itemMargin> 
          <rotation>180</rotation>
-         <badgeIconColor>434242</badgeIconColor>
-         <folderLinkIconColor>F3EFE0</folderLinkIconColor>
-         <folderLinkSize>0.5</folderLinkSize>
+         <badgeIconColor>${gray}</badgeIconColor>
+         <folderLinkIconColor>${white}</folderLinkIconColor>
+         <folderLinkSize>0.45</folderLinkSize>
          <folderLinkPos>0.5 0.475</folderLinkPos>
          <customFolderLinkIcon>./files/images/folderlink.svg</customFolderLinkIcon>
       </badges>
@@ -253,38 +270,38 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <path>./files/background-dark.svg</path>
          </image>  
          <helpsystem name="help">
-            <textColor>F3EFE0</textColor>
-            <iconColor>F3EFE0</iconColor>
-            <fontPath>${bodyFont}</fontPath>
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
          </helpsystem>
          <text name="prompt">
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </text>
          <textlist name="list">
-            <selectedColor>434242</selectedColor>
-            <selectedBackgroundColor>F3EFE0</selectedBackgroundColor>
-            <primaryColor>F3EFE0</primaryColor>
-            <secondaryColor>fff0cf</secondaryColor>
-            <selectedSecondaryColor>222222</selectedSecondaryColor>
-            <selectedSecondaryBackgroundColor>F3EFE0</selectedSecondaryBackgroundColor>
+            <selectedColor>${gray}</selectedColor>
+            <selectedBackgroundColor>${white}</selectedBackgroundColor>
+            <primaryColor>${white}</primaryColor>
+            <secondaryColor>${manila}</secondaryColor>
+            <selectedSecondaryColor>${black}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
          </textlist>
          <image name="controller">
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </image>
          <image name="Syslogo">
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </image>
       </view>
       <view name="gamelist">
          <text name="system-name">
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </text>
       <image name="controller">
          <visible>false</visible>
       </image>
       <badges name="badges">
-         <badgeIconColor>F3EFE0</badgeIconColor>
-         <folderLinkIconColor>434242</folderLinkIconColor>
+         <badgeIconColor>${white}</badgeIconColor>
+         <folderLinkIconColor>${gray}</folderLinkIconColor>
       </badges>
       </view>
    </variant>  
@@ -322,33 +339,33 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <path>./files/background-dark.svg</path>
          </image>  
          <helpsystem name="help">
-            <textColor>F3EFE0</textColor>
-            <iconColor>F3EFE0</iconColor>
-            <fontPath>${bodyFont}</fontPath>
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
          </helpsystem>
          <text name="prompt">
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </text>
          <image name="controller">
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </image>
          <textlist name="list">
-            <selectedColor>434242</selectedColor>
-            <selectedBackgroundColor>F3EFE0</selectedBackgroundColor>
-            <primaryColor>F3EFE0</primaryColor>
-            <secondaryColor>fff0cf</secondaryColor>
-            <selectedSecondaryColor>222222</selectedSecondaryColor>
-            <selectedSecondaryBackgroundColor>F3EFE0</selectedSecondaryBackgroundColor>
+            <selectedColor>${gray}</selectedColor>
+            <selectedBackgroundColor>${white}</selectedBackgroundColor>
+            <primaryColor>${white}</primaryColor>
+            <secondaryColor>${manila}</secondaryColor>
+            <selectedSecondaryColor>${black}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
          </textlist>
          <image name="Syslogo">
             <visible>true</visible>
-            <color>F3EFE0</color>
+            <color>${white}</color>
          </image>
       </view>
       <view name="gamelist">
          <badges name="badges">
-            <badgeIconColor>F3EFE0</badgeIconColor>
-            <folderLinkIconColor>434242</folderLinkIconColor>
+            <badgeIconColor>${white}</badgeIconColor>
+            <folderLinkIconColor>${gray}</folderLinkIconColor>
             <!--<visible>true</visible>
             <direction>row</direction>
             <horizontalAlignment>right</horizontalAlignment>
@@ -362,20 +379,3 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       </view>
    </variant> 
 </theme>
-
-<!-- 
-white
-F3EFE0
-gray
-434242
-black
-222222
-
-v2
-white
-D8D9DA
-gray
-61677A
-black
-272829
--->
