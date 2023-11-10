@@ -94,6 +94,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
    </view>
    
    <view name="gamelist">
+   
       <text name="system-name">
          <text>${system.fullName}</text>
          <fontPath>${bodyFont}</fontPath>
@@ -116,7 +117,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <customBadgeIcon badge="altemulator">./files/images/badge-altemulator.svg</customBadgeIcon>
          <customBadgeIcon badge="manual">./files/images/badge-manual.svg</customBadgeIcon>
          <controllerSize>0.8</controllerSize>
-         <folderLinkSize>0.8</folderLinkSize>
          <origin>1 0</origin>
          <horizontalAlignment>center</horizontalAlignment>
          <direction>column</direction>
@@ -125,6 +125,10 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <itemMargin>-1 0.0075</itemMargin> 
          <rotation>180</rotation>
          <badgeIconColor>434242</badgeIconColor>
+         <folderLinkIconColor>F3EFE0</folderLinkIconColor>
+         <folderLinkSize>0.5</folderLinkSize>
+         <folderLinkPos>0.5 0.475</folderLinkPos>
+         <customFolderLinkIcon>./files/images/folderlink.svg</customFolderLinkIcon>
       </badges>
       <video name="video">
          <origin>1 1</origin>
@@ -280,6 +284,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       </image>
       <badges name="badges">
          <badgeIconColor>F3EFE0</badgeIconColor>
+         <folderLinkIconColor>434242</folderLinkIconColor>
       </badges>
       </view>
    </variant>  
@@ -343,6 +348,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <view name="gamelist">
          <badges name="badges">
             <badgeIconColor>F3EFE0</badgeIconColor>
+            <folderLinkIconColor>434242</folderLinkIconColor>
             <!--<visible>true</visible>
             <direction>row</direction>
             <horizontalAlignment>right</horizontalAlignment>
