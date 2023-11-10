@@ -19,7 +19,9 @@ The variants with artwork will play a video after a delay
 
 This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
 
-Modified from Anthony Caccese's Terminal (ES-DE Edition)
+Modified from [Anthony Caccese's Terminal (ES-DE Edition)](https://github.com/anthonycaccese/terminal-es-de)
+
+System Controllers from [ES-DE](https://gitlab.com/es-de/themes/system-controllers-outline)
 
 Akashi Font Author: Ten by Twenty
 
