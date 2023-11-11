@@ -47,9 +47,9 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
         <maxSize>0.25 0.5</maxSize>
         <pos>0.815 0.5</pos>
 -->      
-        <origin>1 1</origin>
-        <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
-        <pos>0.9296875 0.75</pos>
+        <origin>0.5 1</origin>
+        <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+        <pos>0.8125 0.75</pos>
         <color>${gray}</color>
         <path>./files/system-controllers/${system.theme}.svg</path>
       </image>
@@ -175,7 +175,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       </text>
 
       <video name="video">
-         <origin>1 1</origin>
+         <origin>0.5 1</origin>
          <delay>2.5</delay>
          <imageType>cover,screenshot,titlescreen</imageType>
          <pillarboxes>false</pillarboxes>
@@ -194,8 +194,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <size>0.5 0.75</size><!--width height-->
             </textlist>
             <image name="controller">
-               <pos>0.9296875 0.75</pos>
-               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
             </image>
          </view>
          <view name="gamelist">
@@ -218,8 +218,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.98125 0.66375</pos>
             </text>
             <video name="video">
-               <pos>0.9296875 0.75</pos>
-               <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
             </video>
          </view>
       </aspectRatio>
@@ -235,8 +235,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <size>0.5 0.75</size>
             </textlist>
             <image name="controller">
-               <pos>0.94 0.75</pos><!-- 1062 630 -->
-               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+               <pos>0.8125 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.4</maxSize><!-- 300 400 -->
             </image>
          </view>
          <view name="gamelist">
@@ -259,8 +259,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.98125 0.66375</pos>
             </text>
             <video name="video">
-               <pos>0.94 0.75</pos><!-- 1062 630 -->
-               <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
+               <pos>0.8125 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.4</maxSize><!-- 300 400 -->
             </video>
          </view>
       </aspectRatio>
@@ -279,8 +279,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.7725 0.91</pos>
             </image>
             <image name="controller">
-               <pos>0.925 0.75</pos><!-- 870 630 -->
-               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+               <pos>0.7725 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
             </image>
          </view>
          <view name="gamelist">
@@ -303,8 +303,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.98 0.66375</pos>
             </text>
             <video name="video">
-               <pos>0.925 0.75</pos><!-- 870 630 -->
-               <maxSize>0.3125 0.555555555555556</maxSize><!-- 300 400 -->
+               <pos>0.7725 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
             </video>
          </view>
       </aspectRatio>
