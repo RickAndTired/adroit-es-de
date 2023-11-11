@@ -4,7 +4,7 @@ Adroit ES-DE Theme
 
 by Rick
 
-Variants: Light, Dark, Light No Art, Dark No Art
+Variants: Dark, Light, Dark No Art, Light No Art
 
 The variants with media will play a video after a delay
 
