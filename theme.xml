@@ -41,7 +41,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <letterCaseCustomCollections>capitalize</letterCaseCustomCollections>
          </textlist>
       <image name="controller">
-<!--    Center Right controller position
+<!--    
+        Center Right controller position
         <origin>0.5 0.5</origin>
         <maxSize>0.25 0.5</maxSize>
         <pos>0.815 0.5</pos>
@@ -109,17 +110,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <color>${white}</color>
          <metadata>systemFullname</metadata>
       </text>
-<!--   
-      <text name="rating">
-         <metadata>rating</metadata>
-         <defaultValue>:space:</defaultValue>
-      </text>
 
-      <text name="players">
-         <metadata>players</metadata>
-         <defaultValue>:space:</defaultValue>
-      </text>
-     --> 
       <badges name="badges">
          <lines>1</lines>
          <itemsPerLine>9</itemsPerLine>
@@ -137,7 +128,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <origin>1 0</origin>
          <horizontalAlignment>center</horizontalAlignment>
          <direction>column</direction>
-         <pos>0.99 0.25</pos>
+         <!--<pos>0.99 0.25</pos> position with no players / ratings badge-->
          <size>0.05 0.5</size>
          <itemMargin>-1 0.0075</itemMargin> 
          <rotation>180</rotation>
@@ -147,6 +138,44 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <folderLinkPos>0.5 0.475</folderLinkPos>
          <customFolderLinkIcon>./files/images/folderlink.svg</customFolderLinkIcon>
       </badges>
+
+      <image name="rating-outline">
+         <origin>1 0.5</origin>
+         <!--<pos>0.9785 0.75</pos> position of first badge-->
+         <pos>0.9785 0.725</pos>
+         <size>0.0275 0.04725</size>
+         <path>./files/images/rating.svg</path>
+         <color>${gray}</color>
+      </image>
+      <text name="rating">
+         <metadata>rating</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <origin>0.5 0.5</origin>
+         <size>0.05 0.05</size>
+         <pos>0.98125 0.725</pos>
+         <color>${gray}</color>
+      </text>
+      <image name="players-outline">
+         <origin>1 0.5</origin>
+         <!--<pos>0.9785 0.75</pos>-->
+         <pos>0.9785 0.6725</pos>
+         <size>0.0275 0.04725</size>
+         <path>./files/images/players.svg</path>
+         <color>${gray}</color>
+      </image>
+      <text name="players">
+         <metadata>players</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <origin>0.5 0.5</origin>
+         <size>0.05 0.05</size>
+         <pos>0.98125 0.6725</pos>
+         <color>${gray}</color>
+      </text>
+
       <video name="video">
          <origin>1 1</origin>
          <delay>2.5</delay>
@@ -177,7 +206,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <badges name="badges">
-               <pos>0.99 0.25</pos>
+               <pos>0.99 0.1425</pos>
             </badges>
             <video name="video">
                <pos>0.9296875 0.75</pos>
@@ -207,7 +236,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <badges name="badges">
-               <pos>0.99 0.25</pos>
+               <pos>0.99 0.1425</pos>
             </badges>
             <video name="video">
                <pos>0.94 0.75</pos><!-- 1062 630 -->
@@ -240,7 +269,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <badges name="badges">
-               <pos>0.99 0.25</pos>
+               <pos>0.99 0.1425</pos>
             </badges>
             <video name="video">
                <pos>0.925 0.75</pos><!-- 870 630 -->
@@ -303,6 +332,18 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <badgeIconColor>${white}</badgeIconColor>
          <folderLinkIconColor>${gray}</folderLinkIconColor>
       </badges>
+      <image name="rating-outline">
+         <color>${white}</color>
+      </image>
+      <text name="rating">
+         <color>${white}</color>
+      </text>
+      <image name="players-outline">
+         <color>${white}</color>
+      </image>
+      <text name="players">
+         <color>${white}</color>
+      </text>
       </view>
    </variant>  
    
@@ -373,6 +414,18 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <pos>0.685 0.45</pos>
             <size>0.3 0.3</size>-->
          </badges>
+         <image name="rating-outline">
+            <color>${white}</color>
+         </image>
+         <text name="rating">
+            <color>${white}</color>
+         </text>
+         <image name="players-outline">
+            <color>${white}</color>
+         </image>
+         <text name="players">
+            <color>${white}</color>
+         </text>
          <video name="video">
             <visible>false</visible>
          </video>
