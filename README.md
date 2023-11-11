@@ -8,13 +8,13 @@ Variants: Dark, Light, Dark No Art, Light No Art
 
 The variants with media will play a video after a delay
 
-![dark-1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/253d299f-f8b1-46cb-9416-b4593b50e187)
-![dark-2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/6245952b-0518-4995-bb31-9179de7748f8)
-![dark-3](https://github.com/RickAndTired/adroit-es-de/assets/53553229/b451aa5f-6bc6-40c4-b577-93e158a9998e)
+![dark1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/a82a0b43-c7bf-41db-bb32-119dbc2490f7)
+![dark2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/c24e5e0f-dc76-4ac6-8a4b-eb0d5ff96421)
+![dark3](https://github.com/RickAndTired/adroit-es-de/assets/53553229/8ac573c4-9b77-4423-89c1-6b709c39eda3)
 
-![light-1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/4b2408df-098f-441b-9d93-fe21ddc11e0e)
-![light-2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/3bbf823e-a4a5-4d59-a428-f8208eaf4f7b)
-![light-3](https://github.com/RickAndTired/adroit-es-de/assets/53553229/ba7352b0-b4c5-4a35-baa6-0a68deeba33e)
+![light1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/d8e837f7-179f-4818-8cb3-a99599dc642e)
+![light2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/6b090178-285a-48f2-9768-1e55ce95f2e9)
+![light3](https://github.com/RickAndTired/adroit-es-de/assets/53553229/747bcce8-b37c-4b0a-8961-e520d779afc0)
 
 This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
 
