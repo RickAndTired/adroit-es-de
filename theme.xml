@@ -238,6 +238,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <badges name="badges">
                <pos>0.99 0.1425</pos>
             </badges>
+            <image name="rating-outline">
+               <pos>0.98125 0.725</pos>
+               <size>0.03125 0.04725</size>
+            </image>
+            <image name="players-outline">
+               <pos>0.98125 0.6725</pos>
+               <size>0.03125 0.04725</size>
+            </image>
             <video name="video">
                <pos>0.94 0.75</pos><!-- 1062 630 -->
                <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
