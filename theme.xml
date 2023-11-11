@@ -142,8 +142,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <image name="rating-outline">
          <origin>1 0.5</origin>
          <!--<pos>0.9785 0.75</pos> position of first badge-->
-         <pos>0.9785 0.725</pos>
-         <size>0.0275 0.04725</size>
          <path>./files/images/rating.svg</path>
          <color>${gray}</color>
       </image>
@@ -154,14 +152,11 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <fontSize>0.02</fontSize>
          <origin>0.5 0.5</origin>
          <size>0.05 0.05</size>
-         <pos>0.98125 0.725</pos>
+         <pos>0.98125 0.7175</pos>
          <color>${gray}</color>
       </text>
       <image name="players-outline">
          <origin>1 0.5</origin>
-         <!--<pos>0.9785 0.75</pos>-->
-         <pos>0.9785 0.6725</pos>
-         <size>0.0275 0.04725</size>
          <path>./files/images/players.svg</path>
          <color>${gray}</color>
       </image>
@@ -172,7 +167,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <fontSize>0.02</fontSize>
          <origin>0.5 0.5</origin>
          <size>0.05 0.05</size>
-         <pos>0.98125 0.6725</pos>
+         <pos>0.98125 0.666</pos>
          <color>${gray}</color>
       </text>
 
@@ -208,6 +203,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <badges name="badges">
                <pos>0.99 0.1425</pos>
             </badges>
+            <image name="rating-outline">
+               <pos>0.9785 0.725</pos>
+               <size>0.0275 0.05</size>
+            </image>
+            <image name="players-outline">
+               <pos>0.9785 0.67125</pos>
+               <size>0.0275 0.05</size>
+            </image>
             <video name="video">
                <pos>0.9296875 0.75</pos>
                <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
