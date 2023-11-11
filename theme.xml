@@ -201,16 +201,22 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <badges name="badges">
-               <pos>0.99 0.1425</pos>
+               <pos>0.99 0.1375</pos>
             </badges>
             <image name="rating-outline">
                <pos>0.9785 0.725</pos>
                <size>0.0275 0.05</size>
             </image>
+            <text name="rating">
+               <pos>0.98125 0.7175</pos>
+            </text>
             <image name="players-outline">
-               <pos>0.9785 0.67125</pos>
+               <pos>0.9785 0.669</pos>
                <size>0.0275 0.05</size>
             </image>
+            <text name="players">
+               <pos>0.98125 0.66375</pos>
+            </text>
             <video name="video">
                <pos>0.9296875 0.75</pos>
                <maxSize>0.234375 0.555555555555556</maxSize><!-- 300 400 -->
@@ -239,16 +245,22 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <badges name="badges">
-               <pos>0.99 0.1425</pos>
+               <pos>0.99 0.1375</pos>
             </badges>
             <image name="rating-outline">
                <pos>0.98125 0.725</pos>
                <size>0.03125 0.04725</size>
             </image>
+            <text name="rating">
+               <pos>0.98125 0.7175</pos>
+            </text>
             <image name="players-outline">
-               <pos>0.98125 0.6725</pos>
+               <pos>0.98125 0.669</pos>
                <size>0.03125 0.04725</size>
             </image>
+            <text name="players">
+               <pos>0.98125 0.66375</pos>
+            </text>
             <video name="video">
                <pos>0.94 0.75</pos><!-- 1062 630 -->
                <maxSize>0.260416666666667 0.555555555555556</maxSize><!-- 300 400 -->
@@ -280,7 +292,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <badges name="badges">
-               <pos>0.99 0.1425</pos>
+               <pos>0.99 0.1375</pos>
             </badges>
             <image name="rating-outline">
                <pos>0.984 0.725</pos>
@@ -290,11 +302,11 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.98 0.7175</pos>
             </text>
             <image name="players-outline">
-               <pos>0.984 0.6725</pos>
+               <pos>0.984 0.669</pos>
                <size>0.0375 0.04875</size>
             </image>
             <text name="players">
-               <pos>0.98 0.666</pos>
+               <pos>0.98 0.66375</pos>
             </text>
             <video name="video">
                <pos>0.925 0.75</pos><!-- 870 630 -->
