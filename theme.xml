@@ -129,6 +129,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <horizontalAlignment>center</horizontalAlignment>
          <direction>column</direction>
          <!--<pos>0.99 0.25</pos> position with no players / ratings badge-->
+         <pos>0.99 0.1375</pos>
          <size>0.05 0.5</size>
          <itemMargin>-1 0.0075</itemMargin> 
          <rotation>180</rotation>
@@ -200,9 +201,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.015</pos>
                <letterCase>uppercase</letterCase>
             </text>
-            <badges name="badges">
-               <pos>0.99 0.1375</pos>
-            </badges>
             <image name="rating-outline">
                <pos>0.9785 0.725</pos>
                <size>0.0275 0.05</size>
@@ -244,9 +242,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.015</pos>
                <letterCase>uppercase</letterCase>
             </text>
-            <badges name="badges">
-               <pos>0.99 0.1375</pos>
-            </badges>
             <image name="rating-outline">
                <pos>0.98125 0.725</pos>
                <size>0.03125 0.04725</size>
@@ -291,9 +286,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.0125</pos>
                <letterCase>uppercase</letterCase>
             </text>
-            <badges name="badges">
-               <pos>0.99 0.1375</pos>
-            </badges>
             <image name="rating-outline">
                <pos>0.984 0.725</pos>
                <size>0.0375 0.04875</size>
@@ -403,6 +395,21 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <pos>0.685 0.45</pos>
             <size>0.3 0.3</size>
          </badges>-->
+            <badges name="badges">
+               <pos>0.99 0.25</pos>
+            </badges>
+            <image name="rating-outline">
+               <visible>false</visible>
+            </image>
+            <text name="rating">
+               <visible>false</visible>
+            </text>
+            <image name="players-outline">
+               <visible>false</visible>
+            </image>
+            <text name="players">
+               <visible>false</visible>
+            </text>
          <video name="video">
             <visible>false</visible>
          </video>
@@ -444,6 +451,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <badges name="badges">
             <badgeIconColor>${white}</badgeIconColor>
             <folderLinkIconColor>${gray}</folderLinkIconColor>
+            <pos>0.99 0.25</pos>
             <!--<visible>true</visible>
             <direction>row</direction>
             <horizontalAlignment>right</horizontalAlignment>
@@ -451,6 +459,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <pos>0.685 0.45</pos>
             <size>0.3 0.3</size>-->
          </badges>
+         
          <image name="rating-outline">
             <color>${white}</color>
          </image>
@@ -463,6 +472,18 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <text name="players">
             <color>${white}</color>
          </text>
+            <image name="rating-outline">
+               <visible>false</visible>
+            </image>
+            <text name="rating">
+               <visible>false</visible>
+            </text>
+            <image name="players-outline">
+               <visible>false</visible>
+            </image>
+            <text name="players">
+               <visible>false</visible>
+            </text>
          <video name="video">
             <visible>false</visible>
          </video>
