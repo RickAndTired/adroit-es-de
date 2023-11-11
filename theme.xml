@@ -144,6 +144,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <origin>1 0.5</origin>
          <!--<pos>0.9785 0.75</pos> position of first badge-->
          <path>./files/images/rating.svg</path>
+         <metadataElement>true</metadataElement>
          <color>${gray}</color>
       </image>
       <text name="rating">
@@ -159,6 +160,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <image name="players-outline">
          <origin>1 0.5</origin>
          <path>./files/images/players.svg</path>
+         <metadataElement>true</metadataElement>
          <color>${gray}</color>
       </image>
       <text name="players">
