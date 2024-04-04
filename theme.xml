@@ -329,6 +329,10 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.015</pos>
                <letterCase>uppercase</letterCase>
             </text>
+            <badges name="badges">
+              <pos>0.9925 0.1375</pos>
+              <size>0.055 0.5</size>
+            </badges>
             <image name="rating-outline">
                <pos>0.9755 0.725</pos>
                <size>0.021 0.05</size>
@@ -350,6 +354,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          </view>
       </aspectRatio>
 
+
       <aspectRatio name="19.5:9">
          <view name="system,gamelist">
             <text name="prompt">
@@ -370,15 +375,15 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <image name="rating-outline">
-               <pos>0.9755 0.725</pos>
-               <size>0.021 0.05</size>
+               <pos>0.9765 0.725</pos>
+               <size>0.023 0.05</size>
             </image>
             <text name="rating">
                <pos>0.98125 0.7175</pos>
             </text>
             <image name="players-outline">
-               <pos>0.9755 0.669</pos>
-               <size>0.021 0.05</size>
+               <pos>0.9765 0.67</pos>
+               <size>0.023 0.05</size>
             </image>
             <text name="players">
                <pos>0.98125 0.66375</pos>
