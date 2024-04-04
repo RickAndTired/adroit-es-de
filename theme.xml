@@ -208,14 +208,14 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <size>0.0275 0.05</size>
             </image>
             <text name="rating">
-               <pos>0.98125 0.7175</pos>
+               <pos>0.979 0.7175</pos>
             </text>
             <image name="players-outline">
                <pos>0.9785 0.669</pos>
                <size>0.0275 0.05</size>
             </image>
             <text name="players">
-               <pos>0.98125 0.66375</pos>
+               <pos>0.979 0.66375</pos>
             </text>
             <video name="video">
                <pos>0.8125 0.75</pos>
@@ -245,18 +245,18 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <image name="rating-outline">
-               <pos>0.98125 0.725</pos>
-               <size>0.03125 0.04725</size>
+               <pos>0.98025 0.725</pos>
+               <size>0.0312 0.04725</size>
             </image>
             <text name="rating">
-               <pos>0.98125 0.7175</pos>
+               <pos>0.98 0.7175</pos>
             </text>
             <image name="players-outline">
-               <pos>0.98125 0.669</pos>
-               <size>0.03125 0.04725</size>
+               <pos>0.98025 0.669</pos>
+               <size>0.0312 0.04725</size>
             </image>
             <text name="players">
-               <pos>0.98125 0.66375</pos>
+               <pos>0.98 0.66375</pos>
             </text>
             <video name="video">
                <pos>0.8125 0.75</pos><!-- 1062 630 -->
@@ -289,18 +289,18 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <letterCase>uppercase</letterCase>
             </text>
             <image name="rating-outline">
-               <pos>0.984 0.725</pos>
-               <size>0.0375 0.04875</size>
+               <pos>0.983 0.725</pos>
+               <size>0.037 0.04875</size>
             </image>
             <text name="rating">
-               <pos>0.98 0.7175</pos>
+               <pos>0.975 0.7175</pos>
             </text>
             <image name="players-outline">
-               <pos>0.984 0.669</pos>
-               <size>0.0375 0.04875</size>
+               <pos>0.983 0.669</pos>
+               <size>0.037 0.04875</size>
             </image>
             <text name="players">
-               <pos>0.98 0.66375</pos>
+               <pos>0.975 0.66375</pos>
             </text>
             <video name="video">
                <pos>0.7725 0.75</pos><!-- 870 630 -->
