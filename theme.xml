@@ -39,7 +39,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <secondaryColor>${gray}</secondaryColor>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
          <letterCaseCustomCollections>capitalize</letterCaseCustomCollections>
-         </textlist>
+         <textHorizontalScrollDelay>2</textHorizontalScrollDelay>
+      </textlist>
       <image name="controller">
 <!--    
         Center Right controller position
@@ -176,7 +177,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
 
       <video name="video">
          <origin>0.5 1</origin>
-         <delay>2.5</delay>
+         <delay>1.9</delay>
          <imageType>cover,screenshot,titlescreen</imageType>
          <pillarboxes>false</pillarboxes>
          <zIndex>50</zIndex>
