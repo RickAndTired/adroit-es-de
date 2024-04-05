@@ -18,6 +18,24 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <manila>fff0cf</manila>
    </variables>
 
+   <fontSize name="medium">
+      <variables>
+        <listFontSize>0.025</listFontSize>
+        <helpFontSize>0.025</helpFontSize>
+        <sysPromptFontSize>0.05</sysPromptFontSize>
+        <sysNameFontSize>0.05</sysNameFontSize>
+      </variables>
+   </fontSize>
+
+   <fontSize name="large">
+      <variables>
+        <listFontSize>0.05</listFontSize>
+        <helpFontSize>0.029</helpFontSize>
+        <sysPromptFontSize>0.0625</sysPromptFontSize>
+        <sysNameFontSize>0.0625</sysNameFontSize>
+      </variables>
+   </fontSize>
+
    <view name="system,gamelist">
       <image name="background">
           <origin>0 0</origin>
@@ -32,7 +50,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <collectionIndicators>ascii</collectionIndicators>-->
          <selectorColor>00000000</selectorColor>
          <fontPath>${font}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize>${listFontSize}</fontSize>
          <selectedColor>${white}</selectedColor>
          <selectedBackgroundColor>${gray}</selectedBackgroundColor>
          <primaryColor>${black}</primaryColor>
@@ -75,7 +93,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <helpsystem name="help">
          <origin>0.5 0</origin>
          <pos>0.5 0.95</pos>
-         <fontSize>0.025</fontSize>
+         <fontSize>${helpFontSize}</fontSize>
          <textColor>${white}</textColor>
          <iconColor>${white}</iconColor>
          <fontPath>${font}</fontPath>
@@ -86,7 +104,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <text name="prompt">
             <text>Systems</text>
             <fontPath>${font}</fontPath>
-            <fontSize>0.05</fontSize>
+            <fontSize>${sysPromptFontSize}</fontSize>
             <color>${white}</color>
          </text>  
 <!--  
@@ -107,7 +125,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
       <text name="system-name">
          <text>${system.fullName}</text>
          <fontPath>${font}</fontPath>
-         <fontSize>0.05</fontSize>
+         <fontSize>${sysNameFontSize}</fontSize>
          <color>${white}</color>
          <metadata>systemFullname</metadata>
       </text>
@@ -192,7 +210,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             </text>
             <textlist name="list">
                <pos>0.07 0.15</pos><!--horizontal vertical-->
-               <size>0.5 0.75</size><!--width height-->
+               <size>0.6 0.75</size><!--width height-->
             </textlist>
             <image name="controller">
                <pos>0.8125 0.75</pos>
@@ -233,7 +251,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             </text>
             <textlist name="list">
                <pos>0.07 0.15</pos>
-               <size>0.5 0.75</size>
+               <size>0.575 0.75</size>
             </textlist>
             <image name="controller">
                <pos>0.8125 0.75</pos><!-- 1062 630 -->
@@ -273,8 +291,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
                <pos>0.07 0.0125</pos>
             </text>
             <textlist name="list">
-               <pos>0.07 0.15</pos>
-               <size>0.5 0.75</size>
+               <pos>0.025 0.15</pos>
+               <size>0.56 0.75</size>
             </textlist>
             <image name="Syslogo">
                <pos>0.7725 0.91</pos>
@@ -318,7 +336,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             </text>
             <textlist name="list">
                <pos>0.07 0.15</pos><!--horizontal vertical-->
-               <size>0.5 0.75</size><!--width height-->
+               <size>0.6 0.75</size><!--width height-->
             </textlist>
             <image name="controller">
                <pos>0.8125 0.75</pos>
@@ -363,7 +381,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             </text>
             <textlist name="list">
                <pos>0.07 0.15</pos><!--horizontal vertical-->
-               <size>0.5 0.75</size><!--width height-->
+               <size>0.6 0.75</size><!--width height-->
             </textlist>
             <image name="controller">
                <pos>0.8125 0.75</pos>
