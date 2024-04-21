@@ -421,7 +421,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
             <visible>false</visible>
          </image>
          <video name="video">
-            <defaultImage>./files/system-controller-light/${system.theme}.svg</defaultImage>
+            <defaultImage>./files/system-controllers-light/${system.theme}.svg</defaultImage>
          </video>
       </view>
    </variant>  
