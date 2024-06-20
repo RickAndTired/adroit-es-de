@@ -53,6 +53,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <fontSize>${listFontSize}</fontSize>
          <selectedColor>${white}</selectedColor>
          <selectedBackgroundColor>${gray}</selectedBackgroundColor>
+         <selectedBackgroundMargins>0.004 0.004</selectedBackgroundMargins>
          <primaryColor>${black}</primaryColor>
          <secondaryColor>${gray}</secondaryColor>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
@@ -489,33 +490,8 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <image name="Syslogo">
             <visible>true</visible>
          </image>
-      </view>
-      
+      </view> 
       <view name="gamelist"> 
-      <!--Horizontal badges for no art-->
-         <!--<badges name="badges">
-            <visible>true</visible>
-            <direction>row</direction>
-            <horizontalAlignment>right</horizontalAlignment>
-            <origin>0 0</origin>
-            <pos>0.685 0.45</pos>
-            <size>0.3 0.3</size>
-         </badges>-->
-            <badges name="badges">
-               <pos>0.99 0.25</pos>
-            </badges>
-            <image name="rating-outline">
-               <visible>false</visible>
-            </image>
-            <text name="rating">
-               <visible>false</visible>
-            </text>
-            <image name="players-outline">
-               <visible>false</visible>
-            </image>
-            <text name="players">
-               <visible>false</visible>
-            </text>
          <video name="video">
             <visible>false</visible>
          </video>
@@ -557,15 +533,7 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <badges name="badges">
             <badgeIconColor>${white}</badgeIconColor>
             <folderLinkIconColor>${gray}</folderLinkIconColor>
-            <pos>0.99 0.25</pos>
-            <!--<visible>true</visible>
-            <direction>row</direction>
-            <horizontalAlignment>right</horizontalAlignment>
-            <origin>0 0</origin>
-            <pos>0.685 0.45</pos>
-            <size>0.3 0.3</size>-->
-         </badges>
-         
+         </badges>    
          <image name="rating-outline">
             <color>${white}</color>
          </image>
@@ -578,18 +546,6 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
          <text name="players">
             <color>${white}</color>
          </text>
-            <image name="rating-outline">
-               <visible>false</visible>
-            </image>
-            <text name="rating">
-               <visible>false</visible>
-            </text>
-            <image name="players-outline">
-               <visible>false</visible>
-            </image>
-            <text name="players">
-               <visible>false</visible>
-            </text>
          <video name="video">
             <visible>false</visible>
          </video>
