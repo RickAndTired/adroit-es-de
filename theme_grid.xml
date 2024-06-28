@@ -1,0 +1,344 @@
+<!--
+ES-DE Theme Adroit-Grid
+by Rick
+CC-BY-NC-SA
+-->
+
+<theme>
+   <!--<include>./files/system-metadata-master/${system.theme}.xml</include>-->
+   <variables>
+      <font>./files/akashi.ttf</font>
+      <white>F3EFE0</white>
+      <gray>434242</gray>
+      <black>222222</black>
+      <white2>D8D9DA</white2>
+      <gray2>61677A</gray2>
+      <black2>272829</black2>
+      <manila>fff0cf</manila>
+   </variables>
+
+   <view name="system,gamelist">
+      <image name="background">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <path>./files/background.svg</path>
+          <tile>false</tile>
+          <zIndex>1</zIndex>
+      </image>   
+<!--
+        <text name="header">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.035</pos>
+            <text>**** HEADER TEXT ****</text>
+            <fontPath>${font}</fontPath>
+            <fontSize>0.03</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <color>dbdbdb</color>  
+        </text>
+-->      
+     <helpsystem name="help">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.95</pos>
+         <fontSize>0.025</fontSize>
+         <textColor>${white}</textColor>
+         <iconColor>${white}</iconColor>
+         <fontPath>${font}</fontPath>
+      </helpsystem>   
+   </view>
+
+   <view name="system">
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${font}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>${white}</color>
+         </text>  
+         <grid name="system_grid">
+            <origin>0.5 0.5</origin>
+            <pos>0.525 0.565</pos>
+            <size>0.95 0.825</size>
+            <itemSize>0.15 0.15</itemSize>
+            <staticImage>./files/logos/${system.theme}.svg</staticImage>
+            <defaultImage>./files/logos/emulators.svg</defaultImage>
+            <itemScale>1</itemScale>
+            <imageRelativeScale>0.75</imageRelativeScale>
+            <selectorLayer>middle</selectorLayer>
+            <imageColor>${gray}</imageColor>
+            <selectorColor>${gray}</selectorColor>
+            <imageSelectedColor>${white}</imageSelectedColor>
+         </grid>
+   </view>
+   
+   <view name="gamelist">
+   
+      <text name="system-name">
+         <text>${system.fullName}</text>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.04</fontSize>
+         <pos>0.07 0.025</pos>
+         <color>${white}</color>
+         <metadata>systemFullname</metadata>
+         <letterCase>uppercase</letterCase>
+      </text>
+      <grid name="gamelist-grid">
+         <imageType>cover</imageType>
+         <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
+         <origin>0.5 0.5</origin>
+         <pos>0.535 0.5375</pos>
+         <size>0.9 0.825</size>
+         <itemSize>0.1 0.167</itemSize>
+         <itemScale>1.325</itemScale>
+         <imageRelativeScale>0.95</imageRelativeScale>
+         <textColor>${gray}</textColor>
+         <textRelativeScale>0.8</textRelativeScale>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <lineSpacing>1.1</lineSpacing>
+         <!--
+         <backgroundImage>./files/images_grid/gamecover.png</backgroundImage>
+         <backgroundRelativeScale>0.75</backgroundRelativeScale>
+         <defaultImage>./files/images_grid/gamecover.png</defaultImage>
+         <defaultFolderImage>./files/images_grid/gamecover.png</defaultFolderImage>
+         <textHorizontalScrolling>true</textHorizontalScrolling>
+         <textHorizontalScrollDelay>2</textHorizontalScrollDelay>
+         <selectorColor>${gray}</selectorColor>
+         <selectorLayer>bottom</selectorLayer>
+         <unfocusedItemDimming>0.75</unfocusedItemDimming>
+         -->
+      </grid> 
+      <text name="gamename">
+         <origin>0 0</origin>
+         <pos>0.65 0.0075</pos>
+         <size>0.3 0.024</size>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.025</fontSize>
+         <color>${white}</color>
+         <metadata>name</metadata>
+         <container>true</container>
+         <containerType>horizontal</containerType>
+      </text>
+      <badges name="badges">
+         <lines>1</lines>
+         <itemsPerLine>9</itemsPerLine>
+         <slots>folder, broken, favorite, completed, controller, manual, kidgame, altemulator, collection</slots>
+         <customBadgeIcon badge="folder">./files/images_grid/badge-folder.svg</customBadgeIcon>
+         <customBadgeIcon badge="broken">./files/images_grid/badge-broken.svg</customBadgeIcon>
+         <customBadgeIcon badge="completed">./files/images_grid/badge-completed.svg</customBadgeIcon>
+         <customBadgeIcon badge="favorite">./files/images_grid/badge-favorite.svg</customBadgeIcon>
+         <customBadgeIcon badge="kidgame">./files/images_grid/badge-kidgame.svg</customBadgeIcon>
+         <customBadgeIcon badge="collection">./files/images_grid/badge-collection.svg</customBadgeIcon>
+         <customBadgeIcon badge="controller">./files/images_grid/badge-controller.svg</customBadgeIcon>
+         <customBadgeIcon badge="altemulator">./files/images_grid/badge-altemulator.svg</customBadgeIcon>
+         <customBadgeIcon badge="manual">./files/images_grid/badge-manual.svg</customBadgeIcon>
+         <controllerSize>0.8</controllerSize>
+         <controllerIconColor>${white}</controllerIconColor>
+         <origin>0 0</origin>
+         <horizontalAlignment>left</horizontalAlignment>
+         <pos>0.65 0.0375</pos>
+         <size>0.2 0.2</size>
+         <itemMargin>-1 0.0075</itemMargin> 
+         <badgeIconColor>${white}</badgeIconColor>
+         <folderLinkIconColor>${gray}</folderLinkIconColor>
+         <folderLinkSize>0.45</folderLinkSize>
+         <folderLinkPos>0.5 0.55</folderLinkPos>
+         <customFolderLinkIcon>./files/images_grid/folderlink.svg</customFolderLinkIcon>
+      </badges>
+      <rating name="rating">
+         <origin>0 0</origin>
+         <pos>0.65 0.075</pos>
+         <size>0.3 0.024</size>
+      </rating>
+      <text name="playersmetadata">
+         <origin>0 0</origin>
+         <pos>0.78 0.075</pos>
+         <size>0.3 0.024</size>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <color>${white}</color>
+         <metadata>players</metadata>
+      </text>
+      <text name="players">
+         <origin>0 0</origin>
+         <pos>0.725 0.075</pos>
+         <size>0.3 0.024</size>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <color>${white}</color>
+         <metadataElement>true</metadataElement>
+         <text>Players:</text>
+      </text>
+   </view>
+
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <badges name="badges">
+               <pos>0.65 0.04</pos>
+            </badges>
+            <text name="playersmetadata">
+               <pos>0.7875 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.73 0.075</pos>
+            </text>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <text name="gamename">
+               <pos>0.675 0.0075</pos>
+            </text>
+            <badges name="badges">
+               <pos>0.675 0.04</pos>
+               <size>0.25 0.25</size>
+            </badges>
+            <rating name="rating">
+               <pos>0.675 0.075</pos>
+            </rating>
+            <text name="playersmetadata">
+               <pos>0.85 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.775 0.075</pos>
+            </text>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="21:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <badges name="badges">
+               <size>0.15 0.15</size>
+            </badges>
+            <text name="playersmetadata">
+               <pos>0.7475 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.7075 0.075</pos>
+            </text>
+         </view>
+      </aspectRatio>
+
+   
+      <aspectRatio name="19.5:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <badges name="badges">
+               <size>0.15 0.15</size>
+               <pos>0.65 0.0415</pos>
+            </badges>
+            <text name="playersmetadata">
+               <pos>0.755 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.7125 0.075</pos>
+            </text>
+         </view>
+      </aspectRatio>
+   
+      
+   <variant name="LightGrid">
+      <view name="gamelist">
+      </view>
+   </variant>  
+
+   <variant name="DarkGrid">
+      <view name="system,gamelist">
+         <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+      </view>
+      <view name="system">
+         <grid name="system_grid">
+            <imageColor>${white}</imageColor>
+            <selectorColor>${white}</selectorColor>
+            <imageSelectedColor>${gray}</imageSelectedColor>
+         </grid>
+      </view>
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <textColor>${white}</textColor>
+         </grid> 
+      </view> 
+   </variant>  
+
+<!--
+   <variant name="DarkGrid-stretched">
+      <view name="system,gamelist">
+         <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+      </view>
+      <view name="system">
+         <grid name="system_grid">
+            <imageColor>${white}</imageColor>
+            <selectorColor>${white}</selectorColor>
+            <imageSelectedColor>${gray}</imageSelectedColor>
+         </grid>
+      </view>
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <textColor>${white}</textColor>
+            <imageFit>fill</imageFit>
+         </grid> 
+      </view> 
+   </variant> 
+-->
+<!--   
+   <variant name="LightGrid-stretched">
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <imageFit>fill</imageFit>
+         </grid> 
+      </view> 
+   </variant> 
+-->
+</theme>
