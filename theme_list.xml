@@ -1,0 +1,554 @@
+<!--
+ES-DE Theme Adroit
+by Rick
+CC-BY-NC-SA
+Modified from Anthony Caccese's Terminal (ES-DE Edition)
+-->
+
+<theme>
+   <!--<include>./files/system-metadata-master/${system.theme}.xml</include>-->
+   <variables>
+      <font>./files/akashi.ttf</font>
+      <white>F3EFE0</white>
+      <gray>434242</gray>
+      <black>222222</black>
+      <white2>D8D9DA</white2>
+      <gray2>61677A</gray2>
+      <black2>272829</black2>
+      <manila>fff0cf</manila>
+   </variables>
+
+   <fontSize name="medium">
+      <variables>
+        <listFontSize>0.025</listFontSize>
+        <helpFontSize>0.025</helpFontSize>
+        <sysPromptFontSize>0.05</sysPromptFontSize>
+        <sysNameFontSize>0.05</sysNameFontSize>
+      </variables>
+   </fontSize>
+
+   <fontSize name="large">
+      <variables>
+        <listFontSize>0.05</listFontSize>
+        <helpFontSize>0.029</helpFontSize>
+        <sysPromptFontSize>0.0625</sysPromptFontSize>
+        <sysNameFontSize>0.0625</sysNameFontSize>
+      </variables>
+   </fontSize>
+
+   <view name="system,gamelist">
+      <image name="background">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <path>./files/background.svg</path>
+          <tile>false</tile>
+          <zIndex>1</zIndex>
+      </image>    
+      <textlist name="list">
+         <!--<indicators>symbols</indicators>
+         <collectionIndicators>ascii</collectionIndicators>-->
+         <selectorColor>00000000</selectorColor>
+         <fontPath>${font}</fontPath>
+         <fontSize>${listFontSize}</fontSize>
+         <selectedColor>${white}</selectedColor>
+         <selectedBackgroundColor>${gray}</selectedBackgroundColor>
+         <selectedBackgroundMargins>0.004 0.004</selectedBackgroundMargins>
+         <primaryColor>${black}</primaryColor>
+         <secondaryColor>${gray}</secondaryColor>
+         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+         <letterCaseCustomCollections>capitalize</letterCaseCustomCollections>
+         <textHorizontalScrollDelay>2</textHorizontalScrollDelay>
+      </textlist>
+      <image name="controller">
+<!--    
+        Center Right controller position
+        <origin>0.5 0.5</origin>
+        <maxSize>0.25 0.5</maxSize>
+        <pos>0.815 0.5</pos>
+-->      
+        <origin>0.5 1</origin>
+        <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+        <pos>0.8125 0.75</pos>
+        <color>${gray}</color>
+        <path>./files/system-controllers/${system.theme}.svg</path>
+      </image>
+      <image name="Syslogo">
+         <path>./files/logos/${system.theme}.svg</path>
+         <pos>0.8125 0.91</pos>
+         <origin>0.5 1</origin>
+         <maxSize>0.25 0.15</maxSize>
+         <color>${gray}</color>
+      </image>    
+<!--
+        <text name="header">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.035</pos>
+            <text>**** HEADER TEXT ****</text>
+            <fontPath>${font}</fontPath>
+            <fontSize>0.03</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <color>dbdbdb</color>  
+         </text>
+-->      
+      <helpsystem name="help">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.95</pos>
+         <fontSize>${helpFontSize}</fontSize>
+         <textColor>${white}</textColor>
+         <iconColor>${white}</iconColor>
+         <fontPath>${font}</fontPath>
+      </helpsystem>   
+   </view>
+
+   <view name="system">
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${font}</fontPath>
+            <fontSize>${sysPromptFontSize}</fontSize>
+            <color>${white}</color>
+         </text>  
+<!--  
+         <text name="description"> 
+            <origin>1 1</origin>
+            <size>0.25 0.5</size>
+            <pos>0.9425 0.75</pos>
+            <fontPath>${font}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>${white}</color>
+            <text>${systemDescription}</text>
+         </text>  
+-->    
+   </view>
+   
+   <view name="gamelist">
+   
+      <text name="system-name">
+         <text>${system.fullName}</text>
+         <fontPath>${font}</fontPath>
+         <fontSize>${sysNameFontSize}</fontSize>
+         <color>${white}</color>
+         <metadata>systemFullname</metadata>
+      </text>
+
+      <badges name="badges">
+         <lines>1</lines>
+         <itemsPerLine>9</itemsPerLine>
+         <slots>folder, broken, favorite, completed, manual, kidgame, altemulator, collection</slots>
+         <customBadgeIcon badge="folder">./files/images/badge-folder.svg</customBadgeIcon>
+         <customBadgeIcon badge="broken">./files/images/badge-broken.svg</customBadgeIcon>
+         <customBadgeIcon badge="completed">./files/images/badge-completed.svg</customBadgeIcon>
+         <customBadgeIcon badge="favorite">./files/images/badge-favorite.svg</customBadgeIcon>
+         <customBadgeIcon badge="kidgame">./files/images/badge-kidgame.svg</customBadgeIcon>
+         <customBadgeIcon badge="collection">./files/images/badge-collection.svg</customBadgeIcon>
+         <customBadgeIcon badge="controller">./files/images/badge-controller.svg</customBadgeIcon>
+         <customBadgeIcon badge="altemulator">./files/images/badge-altemulator.svg</customBadgeIcon>
+         <customBadgeIcon badge="manual">./files/images/badge-manual.svg</customBadgeIcon>
+         <controllerSize>0.8</controllerSize>
+         <origin>1 0</origin>
+         <horizontalAlignment>center</horizontalAlignment>
+         <direction>column</direction>
+         <!--<pos>0.99 0.25</pos> position with no players / ratings badge-->
+         <pos>0.99 0.1375</pos>
+         <size>0.05 0.5</size>
+         <itemMargin>-1 0.0075</itemMargin> 
+         <rotation>180</rotation>
+         <badgeIconColor>${gray}</badgeIconColor>
+         <folderLinkIconColor>${white}</folderLinkIconColor>
+         <folderLinkSize>0.45</folderLinkSize>
+         <folderLinkPos>0.5 0.475</folderLinkPos>
+         <customFolderLinkIcon>./files/images/folderlink.svg</customFolderLinkIcon>
+      </badges>
+
+      <image name="rating-outline">
+         <origin>1 0.5</origin>
+         <!--<pos>0.9785 0.75</pos> position of first badge-->
+         <path>./files/images/rating.svg</path>
+         <metadataElement>true</metadataElement>
+         <color>${gray}</color>
+      </image>
+      <text name="rating">
+         <metadata>rating</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <origin>0.5 0.5</origin>
+         <size>0.05 0.05</size>
+         <pos>0.98125 0.7175</pos>
+         <color>${gray}</color>
+      </text>
+      <image name="players-outline">
+         <origin>1 0.5</origin>
+         <path>./files/images/players.svg</path>
+         <metadataElement>true</metadataElement>
+         <color>${gray}</color>
+      </image>
+      <text name="players">
+         <metadata>players</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <origin>0.5 0.5</origin>
+         <size>0.05 0.05</size>
+         <pos>0.98125 0.666</pos>
+         <color>${gray}</color>
+      </text>
+
+      <video name="video">
+         <origin>0.5 1</origin>
+         <delay>1.9</delay>
+         <imageType>cover,screenshot,titlescreen</imageType>
+         <pillarboxes>false</pillarboxes>
+         <zIndex>50</zIndex>
+         <defaultImage>./files/system-controllers/${system.theme}.svg</defaultImage>
+      </video>
+   </view>
+
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.6 0.75</size><!--width height-->
+            </textlist>
+            <image name="controller">
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <image name="rating-outline">
+               <pos>0.9785 0.725</pos>
+               <size>0.0275 0.05</size>
+            </image>
+            <text name="rating">
+               <pos>0.979 0.7175</pos>
+            </text>
+            <image name="players-outline">
+               <pos>0.9785 0.669</pos>
+               <size>0.0275 0.05</size>
+            </image>
+            <text name="players">
+               <pos>0.979 0.66375</pos>
+            </text>
+            <video name="video">
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos>
+               <size>0.575 0.75</size>
+            </textlist>
+            <image name="controller">
+               <pos>0.8125 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.4</maxSize><!-- 300 400 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <image name="rating-outline">
+               <pos>0.98025 0.725</pos>
+               <size>0.0312 0.04725</size>
+            </image>
+            <text name="rating">
+               <pos>0.98 0.7175</pos>
+            </text>
+            <image name="players-outline">
+               <pos>0.98025 0.669</pos>
+               <size>0.0312 0.04725</size>
+            </image>
+            <text name="players">
+               <pos>0.98 0.66375</pos>
+            </text>
+            <video name="video">
+               <pos>0.8125 0.75</pos><!-- 1062 630 -->
+               <maxSize>0.260416666666667 0.4</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.025 0.15</pos>
+               <size>0.56 0.75</size>
+            </textlist>
+            <image name="Syslogo">
+               <pos>0.7725 0.91</pos>
+            </image>
+            <image name="controller">
+               <pos>0.7725 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <image name="rating-outline">
+               <pos>0.983 0.725</pos>
+               <size>0.037 0.04875</size>
+            </image>
+            <text name="rating">
+               <pos>0.975 0.7175</pos>
+            </text>
+            <image name="players-outline">
+               <pos>0.983 0.669</pos>
+               <size>0.037 0.04875</size>
+            </image>
+            <text name="players">
+               <pos>0.975 0.66375</pos>
+            </text>
+            <video name="video">
+               <pos>0.7725 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="21:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.6 0.75</size><!--width height-->
+            </textlist>
+            <image name="controller">
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <badges name="badges">
+              <pos>0.9925 0.1375</pos>
+              <size>0.055 0.5</size>
+            </badges>
+            <image name="rating-outline">
+               <pos>0.9755 0.725</pos>
+               <size>0.021 0.05</size>
+            </image>
+            <text name="rating">
+               <pos>0.98125 0.7175</pos>
+            </text>
+            <image name="players-outline">
+               <pos>0.9755 0.669</pos>
+               <size>0.021 0.05</size>
+            </image>
+            <text name="players">
+               <pos>0.98125 0.66375</pos>
+            </text>
+            <video name="video">
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+
+
+      <aspectRatio name="19.5:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.07 0.15</pos><!--horizontal vertical-->
+               <size>0.6 0.75</size><!--width height-->
+            </textlist>
+            <image name="controller">
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <image name="rating-outline">
+               <pos>0.9765 0.725</pos>
+               <size>0.023 0.05</size>
+            </image>
+            <text name="rating">
+               <pos>0.98125 0.7175</pos>
+            </text>
+            <image name="players-outline">
+               <pos>0.9765 0.67</pos>
+               <size>0.023 0.05</size>
+            </image>
+            <text name="players">
+               <pos>0.98125 0.66375</pos>
+            </text>
+            <video name="video">
+               <pos>0.8125 0.75</pos>
+               <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
+            </video>
+         </view>
+      </aspectRatio>
+      
+      
+   <variant name="Light">
+      <view name="gamelist">
+         <image name="controller">
+            <visible>false</visible>
+         </image>
+         <video name="video">
+            <defaultImage>./files/system-controllers-light/${system.theme}.svg</defaultImage>
+         </video>
+      </view>
+   </variant>  
+   
+   
+   
+   <variant name="Dark">
+      <view name="system,gamelist">
+         <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+         <textlist name="list">
+            <selectedColor>${gray}</selectedColor>
+            <selectedBackgroundColor>${white}</selectedBackgroundColor>
+            <primaryColor>${white}</primaryColor>
+            <secondaryColor>${manila}</secondaryColor>
+            <selectedSecondaryColor>${black}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+         </textlist>
+         <image name="controller">
+            <color>${white}</color>
+         </image>
+         <image name="Syslogo">
+            <color>${white}</color>
+         </image>
+      </view>
+      <view name="gamelist">
+         <text name="system-name">
+            <color>${white}</color>
+         </text>
+      <image name="controller">
+         <visible>false</visible>
+      </image>
+      <badges name="badges">
+         <badgeIconColor>${white}</badgeIconColor>
+         <folderLinkIconColor>${gray}</folderLinkIconColor>
+      </badges>
+      <image name="rating-outline">
+         <color>${white}</color>
+      </image>
+      <text name="rating">
+         <color>${white}</color>
+      </text>
+      <image name="players-outline">
+         <color>${white}</color>
+      </image>
+      <text name="players">
+         <color>${white}</color>
+      </text>
+      </view>
+   </variant>  
+   
+
+
+   <variant name="LightNoArt">
+      <view name="system,gamelist">
+         <image name="Syslogo">
+            <visible>true</visible>
+         </image>
+      </view> 
+      <view name="gamelist"> 
+         <video name="video">
+            <visible>false</visible>
+         </video>
+      </view>
+   </variant>
+   
+
+
+   <variant name="DarkNoArt">
+      <view name="system,gamelist">
+          <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+         <image name="controller">
+            <color>${white}</color>
+         </image>
+         <textlist name="list">
+            <selectedColor>${gray}</selectedColor>
+            <selectedBackgroundColor>${white}</selectedBackgroundColor>
+            <primaryColor>${white}</primaryColor>
+            <secondaryColor>${manila}</secondaryColor>
+            <selectedSecondaryColor>${black}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+         </textlist>
+         <image name="Syslogo">
+            <visible>true</visible>
+            <color>${white}</color>
+         </image>
+      </view>
+      <view name="gamelist">
+         <badges name="badges">
+            <badgeIconColor>${white}</badgeIconColor>
+            <folderLinkIconColor>${gray}</folderLinkIconColor>
+         </badges>    
+         <image name="rating-outline">
+            <color>${white}</color>
+         </image>
+         <text name="rating">
+            <color>${white}</color>
+         </text>
+         <image name="players-outline">
+            <color>${white}</color>
+         </image>
+         <text name="players">
+            <color>${white}</color>
+         </text>
+         <video name="video">
+            <visible>false</visible>
+         </video>
+      </view>
+   </variant> 
+</theme>
