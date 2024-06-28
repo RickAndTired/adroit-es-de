@@ -12,20 +12,28 @@
    <fontSize>large</fontSize>
    
    <variant name="Dark">
-      <label>Dark</label>
+      <label>Dark List</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="Light">
-      <label>Light</label>
+   <variant name="DarkGrid">
+      <label>Dark Grid</label>
       <selectable>true</selectable>
    </variant>
    <variant name="DarkNoArt">
-      <label>Dark No Art</label>
+      <label>Dark List No Art</label>
       <selectable>true</selectable>
    </variant>  
-   <variant name="LightNoArt">
-      <label>Light No Art</label>
+   <variant name="Light">
+      <label>Light List</label>
       <selectable>true</selectable>
    </variant>
-   
+   <variant name="LightGrid">
+      <label>Light Grid</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="LightNoArt">
+      <label>Light List No Art</label>
+      <selectable>true</selectable>
+   </variant>
+
 </themeCapabilities>
