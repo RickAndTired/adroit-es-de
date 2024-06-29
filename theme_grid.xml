@@ -82,7 +82,7 @@ CC-BY-NC-SA
          <letterCase>uppercase</letterCase>
       </text>
       <grid name="gamelist-grid">
-         <imageType>cover</imageType>
+         <imageType>cover,marquee</imageType>
          <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
          <origin>0.5 0.5</origin>
          <pos>0.535 0.5375</pos>
@@ -303,6 +303,44 @@ CC-BY-NC-SA
    </variant>  
 
 <!--
+   <variant name="LightGridMarquee">
+      <view name="gamelist">
+        <grid name="gamelist-grid">
+           <imageType>marquee,cover</imageType>
+        </grid> 
+      </view>
+   </variant>  
+   
+   <variant name="DarkGridMarquee">
+      <view name="system,gamelist">
+         <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+      </view>
+      <view name="system">
+         <grid name="system_grid">
+            <imageColor>${white}</imageColor>
+            <selectorColor>${white}</selectorColor>
+            <imageSelectedColor>${gray}</imageSelectedColor>
+         </grid>
+      </view>
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <textColor>${white}</textColor>
+            <imageType>marquee,cover</imageType>
+         </grid> 
+      </view> 
+   </variant> 
+
+
    <variant name="DarkGrid-stretched">
       <view name="system,gamelist">
          <image name="background">
@@ -331,8 +369,6 @@ CC-BY-NC-SA
          </grid> 
       </view> 
    </variant> 
--->
-<!--   
    <variant name="LightGrid-stretched">
       <view name="gamelist">
          <grid name="gamelist-grid">
