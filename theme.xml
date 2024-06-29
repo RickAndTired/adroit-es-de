@@ -1,20 +1,14 @@
 <theme>
-  <variant name="Dark">
-    <include>./theme_list.xml</include>
-  </variant>
-  <variant name="DarkGrid">
+  <variant name="Grid">
     <include>./theme_grid.xml</include>
   </variant>
-  <variant name="DarkNoArt">
-    <include>./theme_list.xml</include>
-  </variant>
-  <variant name="Light">
-    <include>./theme_list.xml</include>
-  </variant>
-  <variant name="LightGrid">
+  <variant name="GridMarquee">
     <include>./theme_grid.xml</include>
   </variant>
-  <variant name="LightNoArt">
+  <variant name="List">
+    <include>./theme_list.xml</include>
+  </variant>
+  <variant name="ListNoArt">
     <include>./theme_list.xml</include>
   </variant>
 </theme>
