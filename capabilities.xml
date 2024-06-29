@@ -10,29 +10,28 @@
 
    <fontSize>medium</fontSize>
    <fontSize>large</fontSize>
+
+   <colorScheme name="Dark">
+      <label>Dark</label>
+   </colorScheme>
+   <colorScheme name="Light">
+      <label>Light</label>
+   </colorScheme>
    
-   <variant name="Dark">
-      <label>Dark List</label>
+   <variant name="Grid">
+      <label>Grid Covers</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="DarkGrid">
-      <label>Dark Grid</label>
+   <variant name="GridMarquee">
+      <label>Grid Logos</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="DarkNoArt">
-      <label>Dark List No Art</label>
-      <selectable>true</selectable>
-   </variant>  
-   <variant name="Light">
-      <label>Light List</label>
+   <variant name="List">
+      <label>List</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="LightGrid">
-      <label>Light Grid</label>
-      <selectable>true</selectable>
-   </variant>
-   <variant name="LightNoArt">
-      <label>Light List No Art</label>
+   <variant name="ListNoArt">
+      <label>List No Art</label>
       <selectable>true</selectable>
    </variant>
 
