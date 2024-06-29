@@ -17,12 +17,69 @@ CC-BY-NC-SA
       <manila>fff0cf</manila>
    </variables>
 
+  
+   <colorScheme name="Dark">
+        <variables>
+            <backgroundimage>./files/background-dark.svg</backgroundimage>
+            <gamelisttextcolor>F3EFE0</gamelisttextcolor>
+            <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
+            <listselectedcolor>434242</listselectedcolor>
+            <listselectedbgcolor>F3EFE0</listselectedbgcolor>
+            <listprimarycolor>F3EFE0</listprimarycolor>
+            <listsecondarycolor>fff0cf</listsecondarycolor>
+          <selectedSecondaryColor>434242</selectedSecondaryColor>
+          <selectedSecondaryBackgroundColor>F3EFE0</selectedSecondaryBackgroundColor>
+            <gridimagecolor>F3EFE0</gridimagecolor>
+            <gridselectorcolor>F3EFE0</gridselectorcolor>
+            <gridimageselectedcolor>434242</gridimageselectedcolor>
+            <gamelistgridtext>F3EFE0</gamelistgridtext>
+            <controllercolor>F3EFE0</controllercolor>
+            <syslogocolor>F3EFE0</syslogocolor>
+            <listbadgeiconcolor>F3EFE0</listbadgeiconcolor>
+            <listfolderlinkiconcolor>F3EFE0</listfolderlinkiconcolor>
+            <ratingoutline>F3EFE0</ratingoutline>
+            <rating>F3EFE0</rating>
+            <playeroutline>F3EFE0</playeroutline>
+            <listplayers>F3EFE0</listplayers>
+            <videodef>./files/system-controllers/${system.theme}.svg</videodef>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="Light">
+        <variables>
+            <backgroundimage>./files/background.svg</backgroundimage>
+            <gamelisttextcolor>434242</gamelisttextcolor>   
+            <listselectedcolor>F3EFE0</listselectedcolor>
+            <listselectedbgcolor>434242</listselectedbgcolor>
+            <listprimarycolor>434242</listprimarycolor>
+            <listsecondarycolor>222222</listsecondarycolor>
+          <selectedSecondaryColor>F3EFE0</selectedSecondaryColor>
+          <selectedSecondaryBackgroundColor>434242</selectedSecondaryBackgroundColor>
+            <gridimagecolor>434242</gridimagecolor>
+            <gridselectorcolor>434242</gridselectorcolor>
+            <gridimageselectedcolor>F3EFE0</gridimageselectedcolor>
+            <gamelistgridtext>434242</gamelistgridtext>
+            <controllercolor>434242</controllercolor>
+            <controllerpath>./files/system-controllers-light/${system.theme}.svg</controllerpath>
+            <syslogocolor>434242</syslogocolor>
+            <listbadgeiconcolor>434242</listbadgeiconcolor>
+            <listfolderlinkiconcolor>F3EFE0</listfolderlinkiconcolor>
+            <ratingoutline>434242</ratingoutline>
+            <rating>434242</rating>
+            <playeroutline>434242</playeroutline>
+            <listplayers>434242</listplayers>
+            <videodef>./files/system-controllers-light/${system.theme}.svg</videodef>
+        </variables>
+    </colorScheme>
+
+
+
    <view name="system,gamelist">
       <image name="background">
           <origin>0 0</origin>
           <pos>0 0</pos>
           <size>1 1</size>
-          <path>./files/background.svg</path>
+          <path>${backgroundimage}</path>
           <tile>false</tile>
           <zIndex>1</zIndex>
       </image>   
@@ -64,9 +121,9 @@ CC-BY-NC-SA
             <itemScale>1</itemScale>
             <imageRelativeScale>0.75</imageRelativeScale>
             <selectorLayer>middle</selectorLayer>
-            <imageColor>${gray}</imageColor>
-            <selectorColor>${gray}</selectorColor>
-            <imageSelectedColor>${white}</imageSelectedColor>
+            <imageColor>${gridimagecolor}</imageColor>
+            <selectorColor>${gridselectorcolor}</selectorColor>
+            <imageSelectedColor>${gridimageselectedcolor}</imageSelectedColor>
          </grid>
    </view>
    
@@ -90,7 +147,7 @@ CC-BY-NC-SA
          <itemSize>0.1 0.167</itemSize>
          <itemScale>1.325</itemScale>
          <imageRelativeScale>0.95</imageRelativeScale>
-         <textColor>${gray}</textColor>
+         <textColor>${gamelistgridtext}</textColor>
          <textRelativeScale>0.8</textRelativeScale>
          <fontPath>${font}</fontPath>
          <fontSize>0.02</fontSize>
@@ -269,38 +326,19 @@ CC-BY-NC-SA
       </aspectRatio>
    
       
-   <variant name="LightGrid">
+   <variant name="Grid">
       <view name="gamelist">
       </view>
    </variant>  
+   
+   <variant name="GridMarquee">
+      <view name="gamelist">
+        <grid name="gamelist-grid">
+           <imageType>marquee,cover</imageType>
+        </grid> 
+      </view>
+   </variant> 
 
-   <variant name="DarkGrid">
-      <view name="system,gamelist">
-         <image name="background">
-            <path>./files/background-dark.svg</path>
-         </image>  
-         <helpsystem name="help">
-            <textColor>${white}</textColor>
-            <iconColor>${white}</iconColor>
-            <fontPath>${font}</fontPath>
-         </helpsystem>
-         <text name="prompt">
-            <color>${white}</color>
-         </text>
-      </view>
-      <view name="system">
-         <grid name="system_grid">
-            <imageColor>${white}</imageColor>
-            <selectorColor>${white}</selectorColor>
-            <imageSelectedColor>${gray}</imageSelectedColor>
-         </grid>
-      </view>
-      <view name="gamelist">
-         <grid name="gamelist-grid">
-            <textColor>${white}</textColor>
-         </grid> 
-      </view> 
-   </variant>  
 
 <!--
    <variant name="LightGridMarquee">
