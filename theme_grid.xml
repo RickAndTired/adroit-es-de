@@ -335,6 +335,7 @@ CC-BY-NC-SA
       <view name="gamelist">
         <grid name="gamelist-grid">
            <imageType>marquee,cover</imageType>
+           <!--<backgroundColor>${gray}</backgroundColor>-->
         </grid> 
       </view>
    </variant> 
