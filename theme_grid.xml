@@ -139,7 +139,7 @@ CC-BY-NC-SA
          <letterCase>uppercase</letterCase>
       </text>
       <grid name="gamelist-grid">
-         <imageType>cover,marquee</imageType>
+         <imageType>cover,marquee,titlescreen</imageType>
          <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
          <origin>0.5 0.5</origin>
          <pos>0.535 0.5375</pos>
@@ -334,7 +334,7 @@ CC-BY-NC-SA
    <variant name="GridMarquee">
       <view name="gamelist">
         <grid name="gamelist-grid">
-           <imageType>marquee,cover</imageType> <!--Replace with marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover-->
+           <imageType>marquee,cover,titlescreen</imageType> <!--Replace with marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover-->
            <!--<backgroundColor>${gray}</backgroundColor>-->
         </grid> 
       </view>
