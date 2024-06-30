@@ -22,26 +22,26 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
    <colorScheme name="Dark">
         <variables>
             <backgroundimage>./files/background-dark.svg</backgroundimage>
-            <gamelisttextcolor>F3EFE0</gamelisttextcolor>
+            <gamelisttextcolor>${white}</gamelisttextcolor>
             <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
-            <listselectedcolor>434242</listselectedcolor>
-            <listselectedbgcolor>F3EFE0</listselectedbgcolor>
-            <listprimarycolor>F3EFE0</listprimarycolor>
-            <listsecondarycolor>fff0cf</listsecondarycolor>
-          <selectedSecondaryColor>434242</selectedSecondaryColor>
-          <selectedSecondaryBackgroundColor>F3EFE0</selectedSecondaryBackgroundColor>
-            <gridimagecolor>F3EFE0</gridimagecolor>
-            <gridselectorcolor>F3EFE0</gridselectorcolor>
-            <gridimageselectedcolor>434242</gridimageselectedcolor>
-            <gamelistgridtext>F3EFE0</gamelistgridtext>
-            <controllercolor>F3EFE0</controllercolor>
-            <syslogocolor>F3EFE0</syslogocolor>
-            <listbadgeiconcolor>F3EFE0</listbadgeiconcolor>
-            <listfolderlinkiconcolor>F3EFE0</listfolderlinkiconcolor>
-            <ratingoutline>F3EFE0</ratingoutline>
-            <rating>F3EFE0</rating>
-            <playeroutline>F3EFE0</playeroutline>
-            <listplayers>F3EFE0</listplayers>
+            <listselectedcolor>${gray}</listselectedcolor>
+            <listselectedbgcolor>${white}</listselectedbgcolor>
+            <listprimarycolor>${white}</listprimarycolor>
+            <listsecondarycolor>${manila}</listsecondarycolor>
+          <selectedSecondaryColor>${gray}</selectedSecondaryColor>
+          <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+            <gridimagecolor>${white}</gridimagecolor>
+            <gridselectorcolor>${white}</gridselectorcolor>
+            <gridimageselectedcolor>${gray}</gridimageselectedcolor>
+            <gamelistgridtext>${white}</gamelistgridtext>
+            <controllercolor>${white}</controllercolor>
+            <syslogocolor>${white}</syslogocolor>
+            <listbadgeiconcolor>${white}</listbadgeiconcolor>
+            <listfolderlinkiconcolor>${white}</listfolderlinkiconcolor>
+            <ratingoutline>${white}</ratingoutline>
+            <rating>${white}</rating>
+            <playeroutline>${white}</playeroutline>
+            <listplayers>${white}</listplayers>
             <videodef>./files/system-controllers/${system.theme}.svg</videodef>
         </variables>
     </colorScheme>
@@ -49,26 +49,26 @@ Modified from Anthony Caccese's Terminal (ES-DE Edition)
     <colorScheme name="Light">
         <variables>
             <backgroundimage>./files/background.svg</backgroundimage>
-            <gamelisttextcolor>434242</gamelisttextcolor>   
-            <listselectedcolor>F3EFE0</listselectedcolor>
-            <listselectedbgcolor>434242</listselectedbgcolor>
-            <listprimarycolor>434242</listprimarycolor>
-            <listsecondarycolor>222222</listsecondarycolor>
-          <selectedSecondaryColor>F3EFE0</selectedSecondaryColor>
-          <selectedSecondaryBackgroundColor>434242</selectedSecondaryBackgroundColor>
-            <gridimagecolor>434242</gridimagecolor>
-            <gridselectorcolor>434242</gridselectorcolor>
-            <gridimageselectedcolor>F3EFE0</gridimageselectedcolor>
-            <gamelistgridtext>434242</gamelistgridtext>
-            <controllercolor>434242</controllercolor>
+            <gamelisttextcolor>${gray}</gamelisttextcolor>   
+            <listselectedcolor>${white}</listselectedcolor>
+            <listselectedbgcolor>${gray}</listselectedbgcolor>
+            <listprimarycolor>${gray}</listprimarycolor>
+            <listsecondarycolor>${black}</listsecondarycolor>
+          <selectedSecondaryColor>${white}</selectedSecondaryColor>
+          <selectedSecondaryBackgroundColor>${gray}</selectedSecondaryBackgroundColor>
+            <gridimagecolor>${gray}</gridimagecolor>
+            <gridselectorcolor>${gray}</gridselectorcolor>
+            <gridimageselectedcolor>${white}</gridimageselectedcolor>
+            <gamelistgridtext>${gray}</gamelistgridtext>
+            <controllercolor>${gray}</controllercolor>
             <controllerpath>./files/system-controllers-light/${system.theme}.svg</controllerpath>
-            <syslogocolor>434242</syslogocolor>
-            <listbadgeiconcolor>434242</listbadgeiconcolor>
-            <listfolderlinkiconcolor>F3EFE0</listfolderlinkiconcolor>
-            <ratingoutline>434242</ratingoutline>
-            <rating>434242</rating>
-            <playeroutline>434242</playeroutline>
-            <listplayers>434242</listplayers>
+            <syslogocolor>${gray}</syslogocolor>
+            <listbadgeiconcolor>${gray}</listbadgeiconcolor>
+            <listfolderlinkiconcolor>${white}</listfolderlinkiconcolor>
+            <ratingoutline>${gray}</ratingoutline>
+            <rating>${gray}</rating>
+            <playeroutline>${gray}</playeroutline>
+            <listplayers>${gray}</listplayers>
             <videodef>./files/system-controllers-light/${system.theme}.svg</videodef>
         </variables>
     </colorScheme>
