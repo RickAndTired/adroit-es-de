@@ -4,21 +4,31 @@ Adroit ES-DE Theme
 
 by Rick
 
-Variants: Dark, Light, Dark No Art, Light No Art
+Variants: Grid Covers, Grid Logos, List, List No Art
 
-The variants with media will play a video after a delay
+Color Schemes: Dark and Light
 
-![dark1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/a82a0b43-c7bf-41db-bb32-119dbc2490f7)
-![dark2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/c24e5e0f-dc76-4ac6-8a4b-eb0d5ff96421)
-![dark3](https://github.com/RickAndTired/adroit-es-de/assets/53553229/8ac573c4-9b77-4423-89c1-6b709c39eda3)
+Aspect Ratios: 16:9, 16:10, 4:3, 19.5:9, 21:9
 
-![light1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/d8e837f7-179f-4818-8cb3-a99599dc642e)
-![light2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/6b090178-285a-48f2-9768-1e55ce95f2e9)
-![light3](https://github.com/RickAndTired/adroit-es-de/assets/53553229/747bcce8-b37c-4b0a-8961-e520d779afc0)
+<hr/>
+
+Grid Covers - Dark
+![sample1](https://github.com/RickAndTired/adroit-es-de/assets/53553229/ad64ae99-8b46-44fb-a9df-e463a6cc755a)
+List - Dark
+
+Grid Covers - Light
+![sample2](https://github.com/RickAndTired/adroit-es-de/assets/53553229/bd2389db-97f5-4102-b997-25d106bfbe8a)
+List - Light
+
+If you would like to change which type of image is shown on the Grid Logos variant you can edit line `336` in the `theme_grid.xml`
+
+`<imageType>marquee,cover,titlescreen</imageType>` 
+
+Replace with your choice of: marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover
+
+<hr/>
 
 This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
-
-Modified from [Anthony Caccese's Terminal (ES-DE Edition)](https://github.com/anthonycaccese/terminal-es-de)
 
 System Controllers from [ES-DE](https://gitlab.com/es-de/themes/system-controllers-outline)
 
