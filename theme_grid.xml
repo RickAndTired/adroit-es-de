@@ -330,7 +330,7 @@ CC-BY-NC-SA
       </view>
    </variant>  
    
-   <variant name="GridMarquee">
+   <variant name="GridLogos">
       <view name="gamelist">
         <grid name="gamelist-grid">
            <imageType>marquee,cover,titlescreen</imageType> <!--Replace with marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover-->
