@@ -2,7 +2,7 @@
   <variant name="Grid">
     <include>./theme_grid.xml</include>
   </variant>
-  <variant name="GridMarquee">
+  <variant name="GridLogos">
     <include>./theme_grid.xml</include>
   </variant>
   <variant name="List">
