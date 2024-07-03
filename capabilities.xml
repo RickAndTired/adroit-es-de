@@ -22,7 +22,7 @@
       <label>Grid Covers</label>
       <selectable>true</selectable>
    </variant>
-   <variant name="GridMarquee">
+   <variant name="GridLogos">
       <label>Grid Logos</label>
       <selectable>true</selectable>
    </variant>
