@@ -7,6 +7,7 @@
    <aspectRatio>4:3</aspectRatio>
    <aspectRatio>21:9</aspectRatio>
    <aspectRatio>19.5:9</aspectRatio>
+   <aspectRatio>1:1</aspectRatio>
 
    <fontSize>medium</fontSize>
    <fontSize>large</fontSize>
