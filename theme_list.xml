@@ -471,7 +471,55 @@ CC-BY-NC-SA
             </video>
          </view>
       </aspectRatio>
-      
+
+      <aspectRatio name="1:1">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.025 0.0125</pos>
+            </text>
+            <textlist name="list">
+               <pos>0.025 0.15</pos>
+               <size>0.56 0.75</size>
+            </textlist>
+            <image name="Syslogo">
+               <pos>0.7725 0.91</pos>
+            </image>
+            <image name="controller">
+               <pos>0.7725 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.025 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+            <image name="rating-outline">
+               <pos>0.99 0.725</pos>
+               <size>0.05 0.04875</size>
+            </image>
+            <text name="rating">
+               <pos>0.975 0.7175</pos>
+            </text>
+            <image name="players-outline">
+               <pos>0.99 0.669</pos>
+               <size>0.05 0.04875</size>
+            </image>
+            <text name="players">
+               <pos>0.975 0.66375</pos>
+            </text>
+            <video name="video">
+               <pos>0.7725 0.75</pos><!-- 870 630 -->
+               <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
+            </video>
+      <helpsystem name="help">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.95</pos>
+         <fontSize>0.0215</fontSize>
+      </helpsystem> 
+         </view>
+      </aspectRatio>
+
       
    <variant name="List">
       <view name="gamelist">
