@@ -323,7 +323,41 @@ CC-BY-NC-SA
             </text>
          </view>
       </aspectRatio>
-   
+
+      <aspectRatio name="1:1">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+            <helpsystem name="help">
+                 <origin>0.5 0</origin>
+                 <pos>0.5 0.95</pos>
+                 <fontSize>0.021</fontSize>
+            </helpsystem>  
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <fontSize>0.03</fontSize>
+               <pos>0.03 0.03</pos>
+            </text>
+            <text name="gamename">
+               <pos>0.675 0.0075</pos>
+            </text>
+            <badges name="badges">
+               <pos>0.675 0.04</pos>
+               <size>0.35 0.35</size>
+            </badges>
+            <rating name="rating">
+               <pos>0.675 0.075</pos>
+            </rating>
+            <text name="playersmetadata">
+               <pos>0.9 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.805 0.075</pos>
+            </text>
+         </view>
+      </aspectRatio>
       
    <variant name="Grid">
       <view name="gamelist">
