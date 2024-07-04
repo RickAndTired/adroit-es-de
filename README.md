@@ -8,7 +8,7 @@ Variants: Grid Covers, Grid Logos, List, List No Art
 
 Color Schemes: Dark and Light
 
-Aspect Ratios: 16:9, 16:10, 4:3, 19.5:9, 21:9
+Aspect Ratios: 16:9, 16:10, 4:3, 19.5:9, 21:9, 1:1
 
 <hr/>
 
