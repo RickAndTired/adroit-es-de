@@ -18,6 +18,9 @@
    <colorScheme name="Light">
       <label>Light</label>
    </colorScheme>
+   <colorScheme name="Video">
+      <label>Video</label>
+   </colorScheme>
    
    <variant name="Grid">
       <label>Grid Covers</label>
