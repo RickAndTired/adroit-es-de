@@ -155,6 +155,8 @@ CC-BY-NC-SA
           <origin>0 0</origin>
           <pos>0 0</pos>
           <size>1 1</size>
+          <delay>0</delay>
+          <fadeInTime>0</fadeInTime>
           <zIndex>4</zIndex>
       </video>
       <textlist name="list">
