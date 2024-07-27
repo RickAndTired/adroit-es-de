@@ -32,15 +32,17 @@ Replace with your choice of: marquee,cover,3dbox,physicalmedia,titlescreen,mixim
 
 You can provide your own video or gif background for the Animated scheme
 
-In the `adroit-es-de/files/` folder - remove `background.jpg` and `background.mp4`
+In `adroit-es-de/files/` - remove `background.jpg` and `background.mp4`
 
-Place your own `background.mp4` or `background.gif` inside (if you use an mp4 - take a screenshot of the first frame and place it inside as `background.jpg`)
+Place your own `background.mp4` or `background.gif` inside 
+
+(If you use an mp4 - also include a screenshot of the first frame as `background.jpg`)
 
 You can use a `background.mp4` with audio to get background music
 
-You can mute the `background.mp4` audio by changing `<audio>true</audio>` from true to false `theme_grid.xml` line `142` and `theme_list.xml` line `160`
+You can mute the `background.mp4` audio by changing `<audio>true</audio>` to false - `theme_grid.xml` line `142` and `theme_list.xml` line `160`
 
-Background music and the game video audio do not play well together - if you want to keep the background music you can disable the game video audio in `theme_list.xml` line `319`
+Background music and game video audio do not play well together - if you want to keep the background music you can disable the game video audio in `theme_list.xml` line `319`
 
 <hr/>
 
