@@ -78,7 +78,7 @@ CC-BY-NC-SA
         </variables>
     </colorScheme>
     
-   <colorScheme name="Video">
+   <colorScheme name="Animated">
         <variables>
             <backgroundimage>./files/background-dark.svg</backgroundimage>
             <gamelisttextcolor>${white}</gamelisttextcolor>
@@ -157,6 +157,7 @@ CC-BY-NC-SA
           <size>1 1</size>
           <delay>0</delay>
           <fadeInTime>0</fadeInTime>
+          <audio>true</audio>
           <zIndex>4</zIndex>
       </video>
       <textlist name="list">
@@ -315,6 +316,7 @@ CC-BY-NC-SA
          <delay>1.9</delay>
          <imageType>cover,screenshot,titlescreen</imageType>
          <pillarboxes>false</pillarboxes>
+         <audio>true</audio>
          <zIndex>50</zIndex>
          <defaultImage>${videodef}</defaultImage>
       </video>
