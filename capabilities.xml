@@ -18,8 +18,8 @@
    <colorScheme name="Light">
       <label>Light</label>
    </colorScheme>
-   <colorScheme name="Video">
-      <label>Video</label>
+   <colorScheme name="Animated">
+      <label>Animated</label>
    </colorScheme>
    
    <variant name="Grid">
