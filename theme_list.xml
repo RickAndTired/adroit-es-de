@@ -42,6 +42,9 @@ CC-BY-NC-SA
             <playeroutline>${white}</playeroutline>
             <listplayers>${white}</listplayers>
             <videodef>./files/system-controllers/${system.theme}.svg</videodef>
+            <backgroundjpg>./none</backgroundjpg>        
+            <backgroundgif>./none</backgroundgif>
+            <backgroundmp4>./none</backgroundmp4>
         </variables>
     </colorScheme>
 
@@ -69,9 +72,41 @@ CC-BY-NC-SA
             <playeroutline>${gray}</playeroutline>
             <listplayers>${gray}</listplayers>
             <videodef>./files/system-controllers-light/${system.theme}.svg</videodef>
+            <backgroundjpg>./none</backgroundjpg>        
+            <backgroundgif>./none</backgroundgif>
+            <backgroundmp4>./none</backgroundmp4>
         </variables>
     </colorScheme>
     
+   <colorScheme name="Animated">
+        <variables>
+            <backgroundimage>./files/background-dark.svg</backgroundimage>
+            <gamelisttextcolor>${white}</gamelisttextcolor>
+            <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
+            <listselectedcolor>${black}</listselectedcolor>
+            <listselectedbgcolor>${white}</listselectedbgcolor>
+            <listprimarycolor>${white}</listprimarycolor>
+            <listsecondarycolor>${manila}</listsecondarycolor>
+          <selectedSecondaryColor>${gray}</selectedSecondaryColor>
+          <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+            <gridimagecolor>${white}</gridimagecolor>
+            <gridselectorcolor>${white}</gridselectorcolor>
+            <gridimageselectedcolor>${gray}</gridimageselectedcolor>
+            <gamelistgridtext>${white}</gamelistgridtext>
+            <controllercolor>${white}</controllercolor>
+            <syslogocolor>${white}</syslogocolor>
+            <listbadgeiconcolor>${white}</listbadgeiconcolor>
+            <listfolderlinkiconcolor>${white}</listfolderlinkiconcolor>
+            <ratingoutline>${white}</ratingoutline>
+            <rating>${white}</rating>
+            <playeroutline>${white}</playeroutline>
+            <listplayers>${white}</listplayers>
+            <videodef>./files/system-controllers/${system.theme}.svg</videodef>
+            <backgroundjpg>./files/background.jpg</backgroundjpg>        
+            <backgroundgif>./files/background.gif</backgroundgif>
+            <backgroundmp4>./files/background.mp4</backgroundmp4>
+        </variables>
+    </colorScheme>  
 
    <fontSize name="medium">
       <variables>
@@ -99,7 +134,32 @@ CC-BY-NC-SA
           <path>${backgroundimage}</path>
           <tile>false</tile>
           <zIndex>1</zIndex>
-      </image>    
+      </image>
+      <image name="backgroundimage">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <path>${backgroundjpg}</path>
+          <tile>false</tile>
+          <zIndex>2</zIndex>
+      </image>  
+      <animation name ="backgroundgif">
+          <path>${backgroundgif}</path>
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+      </animation>
+      <video name ="backgroundvideo">
+          <path>${backgroundmp4}</path>
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <delay>0</delay>
+          <fadeInTime>0</fadeInTime>
+          <audio>true</audio>
+          <zIndex>4</zIndex>
+      </video>
       <textlist name="list">
          <!--<indicators>symbols</indicators>
          <collectionIndicators>ascii</collectionIndicators>-->
@@ -256,6 +316,7 @@ CC-BY-NC-SA
          <delay>1.9</delay>
          <imageType>cover,screenshot,titlescreen</imageType>
          <pillarboxes>false</pillarboxes>
+         <audio>true</audio>
          <zIndex>50</zIndex>
          <defaultImage>${videodef}</defaultImage>
       </video>

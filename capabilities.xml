@@ -18,6 +18,9 @@
    <colorScheme name="Light">
       <label>Light</label>
    </colorScheme>
+   <colorScheme name="Animated">
+      <label>Animated</label>
+   </colorScheme>
    
    <variant name="Grid">
       <label>Grid Covers</label>
