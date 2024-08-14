@@ -91,7 +91,7 @@ CC-BY-NC-SA
           <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
             <gridimagecolor>${white}</gridimagecolor>
             <gridselectorcolor>${white}</gridselectorcolor>
-            <gridimageselectedcolor>${gray}</gridimageselectedcolor>
+            <gridimageselectedcolor>${black}</gridimageselectedcolor>
             <gamelistgridtext>${white}</gamelistgridtext>
             <controllercolor>${white}</controllercolor>
             <syslogocolor>${white}</syslogocolor>
