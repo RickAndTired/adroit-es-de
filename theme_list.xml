@@ -83,7 +83,7 @@ CC-BY-NC-SA
             <backgroundimage>./files/background-dark.svg</backgroundimage>
             <gamelisttextcolor>${white}</gamelisttextcolor>
             <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
-            <listselectedcolor>${gray}</listselectedcolor>
+            <listselectedcolor>${black}</listselectedcolor>
             <listselectedbgcolor>${white}</listselectedbgcolor>
             <listprimarycolor>${white}</listprimarycolor>
             <listsecondarycolor>${manila}</listsecondarycolor>
