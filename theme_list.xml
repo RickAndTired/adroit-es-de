@@ -80,7 +80,7 @@ CC-BY-NC-SA
     
    <colorScheme name="Animated">
         <variables>
-            <backgroundimage>./files/background-dark.svg</backgroundimage>
+            <backgroundimage>./none</backgroundimage>
             <gamelisttextcolor>${white}</gamelisttextcolor>
             <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
             <listselectedcolor>${black}</listselectedcolor>
@@ -160,6 +160,16 @@ CC-BY-NC-SA
           <audio>true</audio>
           <zIndex>4</zIndex>
       </video>
+      <clock name="sysclock">
+          <pos>0.982 0.06</pos>
+          <origin>1 0</origin>
+          <!--<fontPath>${font}</fontPath>-->
+          <fontSize>0.03</fontSize>
+          <color>${white}</color>
+      </clock>
+      <systemstatus name="sysstatus">
+          <color>${white}</color>
+      </systemstatus>
       <textlist name="list">
          <!--<indicators>symbols</indicators>
          <collectionIndicators>ascii</collectionIndicators>-->
