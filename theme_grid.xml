@@ -80,7 +80,7 @@ CC-BY-NC-SA
 
    <colorScheme name="Animated">
         <variables>
-            <backgroundimage>./files/background-dark.svg</backgroundimage>
+            <backgroundimage>./none</backgroundimage>
             <gamelisttextcolor>${white}</gamelisttextcolor>
             <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
             <listselectedcolor>${gray}</listselectedcolor>
@@ -139,9 +139,21 @@ CC-BY-NC-SA
           <size>1 1</size>
           <delay>0</delay>
           <fadeInTime>0</fadeInTime>
+          <fadeInType>transparent</fadeInType>
           <audio>true</audio>
           <zIndex>4</zIndex>
       </video>
+      <clock name="sysclock">
+          <pos>0.982 0.07</pos>
+          <origin>1 0</origin>
+          <!--<fontPath>${font}</fontPath>-->
+          <fontSize>0.03</fontSize>
+          <color>${white}</color>
+      </clock>
+      <systemstatus name="sysstatus">
+          <pos>0.982 0.035</pos>
+          <color>${white}</color>
+      </systemstatus>
 <!--
         <text name="header">
             <origin>0.5 0</origin>
@@ -389,6 +401,14 @@ CC-BY-NC-SA
             <text name="prompt">
                <pos>0.07 0.0125</pos>
             </text>
+            <clock name="sysclock">
+               <pos>0.0775 0.004</pos>
+               <fontSize>0.0275</fontSize>
+           </clock>
+           <systemstatus name="sysstatus">
+               <pos>0.275 0.002</pos>
+               <height>0.03</height>
+          </systemstatus>
          </view>
          <view name="gamelist">
             <text name="system-name">
