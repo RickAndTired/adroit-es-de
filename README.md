@@ -40,9 +40,9 @@ Place your own `background.mp4` or `background.gif` inside
 
 You can use a `background.mp4` with audio to get background music
 
-You can mute the `background.mp4` audio by changing `<audio>true</audio>` to false - `theme_grid.xml` line `142` and `theme_list.xml` line `160`
+You can enable the `background.mp4` audio by changing `<audio>false</audio>` to true - `theme_grid.xml` line `143` and `theme_list.xml` line `163`
 
-Background music and game video audio do not play well together - if you want to keep the background music you can disable the game video audio in `theme_list.xml` line `319`
+Background music and game video audio do not play well together - if you want to keep the background music you can disable the game video audio in `theme_list.xml` line `345`
 
 <hr/>
 
