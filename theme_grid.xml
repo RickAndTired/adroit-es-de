@@ -215,7 +215,7 @@ CC-BY-NC-SA
          <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
          <origin>0.5 0.515</origin>
          <pos>0.535 0.5375</pos>
-         <size>0.9 0.775</size>
+         <size>0.9 0.797</size>
          <itemSize>0.1 0.225</itemSize>
          <itemScale>1.325</itemScale>
          <imageRelativeScale>0.95</imageRelativeScale>
