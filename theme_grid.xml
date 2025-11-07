@@ -454,7 +454,7 @@ CC-BY-NC-SA
       <aspectRatio name="1:1">
          <view name="system,gamelist">
             <text name="prompt">
-               <pos>0.07 0.0125</pos>
+               <pos>0.035 0.025</pos>
             </text>
             <clock name="sysclock">
                <pos>0.1 0.004</pos>
