@@ -347,10 +347,13 @@ CC-BY-NC-SA
                <pos>0.65 0.04</pos>
             </badges>
             <text name="playersmetadata">
-               <pos>0.7875 0.075</pos>
+               <pos>0.785 0.075</pos>
             </text>
             <text name="players">
                <pos>0.73 0.075</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.85 0.036</pos>
             </text>
          </view>
       </aspectRatio>
@@ -364,21 +367,27 @@ CC-BY-NC-SA
          </view>
          <view name="gamelist">
             <text name="gamename">
-               <pos>0.675 0.0075</pos>
+               <pos>0.58 0.0075</pos>
             </text>
             <badges name="badges">
-               <pos>0.675 0.04</pos>
+               <pos>0.58 0.04</pos>
                <size>0.25 0.25</size>
             </badges>
             <rating name="rating">
-               <pos>0.675 0.075</pos>
+               <pos>0.58 0.075</pos>
             </rating>
             <text name="playersmetadata">
-               <pos>0.85 0.075</pos>
+               <pos>0.747 0.075</pos>
             </text>
             <text name="players">
-               <pos>0.775 0.075</pos>
+               <pos>0.68 0.075</pos>
             </text>
+            <text name="playtime">
+               <pos>0.825 0.036</pos>
+            </text>
+            <clock name="sysclock">
+               <pos>0.985 0.035</pos>
+           </clock>
          </view>
       </aspectRatio>
       
