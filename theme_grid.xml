@@ -144,14 +144,15 @@ CC-BY-NC-SA
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
-          <pos>0.982 0.072</pos>
+          <pos>0.982 0.035</pos>
           <origin>1 0</origin>
           <fontPath>${font}</fontPath>
           <fontSize>0.025</fontSize>
           <color>${white}</color>
       </clock>
       <systemstatus name="sysstatus">
-          <pos>0.982 0.0375</pos>
+          <origin>1 0</origin>
+          <pos>0.982 0.067</pos>
           <color>${white}</color>
       </systemstatus>
 <!--
@@ -300,7 +301,7 @@ CC-BY-NC-SA
       </text>
       <text name="playtime">
          <origin>0 0</origin>
-         <pos>0.857 0.075</pos>
+         <pos>0.8615 0.036</pos>
          <size>0.3 0.024</size>
          <metadata>playtime</metadata>
          <defaultValue>:space:</defaultValue>
@@ -311,6 +312,17 @@ CC-BY-NC-SA
          <lineSpacing>1</lineSpacing>
          <letterCase>capitalize</letterCase>
       </text>
+  <!--
+      <text name="playtimelabel">
+         <origin>0 0</origin>
+         <pos>0.8 0.036</pos>
+         <size>0.3 0.024</size>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <color>${white}</color>
+         <text>Playtime:</text>
+      </text>
+  -->
    </view>
 
       <aspectRatio name="16:9">
