@@ -160,7 +160,7 @@ CC-BY-NC-SA
           <size>1 1</size>
           <delay>0</delay>
           <fadeInTime>0</fadeInTime>
-          <audio>true</audio>
+          <audio>false</audio>
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
