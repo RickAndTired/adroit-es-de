@@ -140,7 +140,7 @@ CC-BY-NC-SA
           <delay>0</delay>
           <fadeInTime>0</fadeInTime>
           <fadeInType>transparent</fadeInType>
-          <audio>true</audio>
+          <audio>false</audio>
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
@@ -216,7 +216,7 @@ CC-BY-NC-SA
          <origin>0.5 0.515</origin>
          <pos>0.535 0.5375</pos>
          <size>0.9 0.775</size>
-         <itemSize>0.1 0.167</itemSize>
+         <itemSize>0.1 0.225</itemSize>
          <itemScale>1.325</itemScale>
          <imageRelativeScale>0.95</imageRelativeScale>
          <textColor>${gamelistgridtext}</textColor>
