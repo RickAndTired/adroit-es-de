@@ -144,14 +144,14 @@ CC-BY-NC-SA
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
-          <pos>0.982 0.07</pos>
+          <pos>0.982 0.072</pos>
           <origin>1 0</origin>
-          <!--<fontPath>${font}</fontPath>-->
-          <fontSize>0.03</fontSize>
+          <fontPath>${font}</fontPath>
+          <fontSize>0.025</fontSize>
           <color>${white}</color>
       </clock>
       <systemstatus name="sysstatus">
-          <pos>0.982 0.035</pos>
+          <pos>0.982 0.0375</pos>
           <color>${white}</color>
       </systemstatus>
 <!--
@@ -223,8 +223,8 @@ CC-BY-NC-SA
          <fontPath>${font}</fontPath>
          <fontSize>0.02</fontSize>
          <lineSpacing>1.1</lineSpacing>
-		   <itemSpacing>0 0</itemSpacing>
-		   <fractionalRows>true</fractionalRows>
+		     <itemSpacing>0 0</itemSpacing>
+		     <fractionalRows>true</fractionalRows>
          <!--
          <backgroundImage>./files/images_grid/gamecover.png</backgroundImage>
          <backgroundRelativeScale>0.75</backgroundRelativeScale>
@@ -297,6 +297,19 @@ CC-BY-NC-SA
          <color>${white}</color>
          <metadataElement>true</metadataElement>
          <text>Players:</text>
+      </text>
+      <text name="playtime">
+         <origin>0 0</origin>
+         <pos>0.857 0.075</pos>
+         <size>0.3 0.024</size>
+         <metadata>playtime</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <horizontalAlignment>left</horizontalAlignment>
+         <color>${white}</color>
+         <lineSpacing>1</lineSpacing>
+         <letterCase>capitalize</letterCase>
       </text>
    </view>
 
