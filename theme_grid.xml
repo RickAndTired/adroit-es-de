@@ -457,11 +457,11 @@ CC-BY-NC-SA
                <pos>0.07 0.0125</pos>
             </text>
             <clock name="sysclock">
-               <pos>0.0775 0.004</pos>
+               <pos>0.1 0.004</pos>
                <fontSize>0.0275</fontSize>
            </clock>
            <systemstatus name="sysstatus">
-               <pos>0.275 0.002</pos>
+               <pos>0.3 0.002</pos>
                <height>0.03</height>
           </systemstatus>
          </view>
@@ -486,8 +486,11 @@ CC-BY-NC-SA
             <text name="players">
                <pos>0.805 0.075</pos>
             </text>
+            <text name="playtime">
+               <pos>0.84 0.044</pos>
+            </text>
             <helpsystem name="help">
-                 <fontSize>0.022</fontSize>
+                 <fontSize>0.021</fontSize>
             </helpsystem>  
          </view>
       </aspectRatio>
