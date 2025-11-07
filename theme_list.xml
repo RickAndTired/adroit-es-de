@@ -161,13 +161,14 @@ CC-BY-NC-SA
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
-          <pos>0.982 0.06</pos>
+          <pos>0.982 0.02</pos>
           <origin>1 0</origin>
           <!--<fontPath>${font}</fontPath>-->
           <fontSize>0.03</fontSize>
           <color>${white}</color>
       </clock>
       <systemstatus name="sysstatus">
+          <pos>0.982 0.06</pos>
           <color>${white}</color>
       </systemstatus>
       <textlist name="list">
@@ -204,7 +205,7 @@ CC-BY-NC-SA
          <path>./files/logos/${system.theme}.svg</path>
          <pos>0.8125 0.91</pos>
          <origin>0.5 1</origin>
-         <maxSize>0.25 0.15</maxSize>
+         <maxSize>0.25 0.135</maxSize>
          <color>${syslogocolor}</color>
       </image>    
 <!--
@@ -320,7 +321,19 @@ CC-BY-NC-SA
          <pos>0.98125 0.666</pos>
          <color>${listplayers}</color>
       </text>
-
+      <text name="playtime">
+         <origin>0 0</origin>
+         <pos>0.662 0.748</pos>
+         <size>0.3 0.024</size>
+         <metadata>playtime</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <horizontalAlignment>center</horizontalAlignment>
+         <color>${white}</color>
+         <lineSpacing>1</lineSpacing>
+         <letterCase>capitalize</letterCase>
+      </text>
       <video name="video">
          <origin>0.5 1</origin>
          <delay>1.9</delay>
