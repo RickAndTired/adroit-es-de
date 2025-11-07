@@ -429,15 +429,24 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
+            <text name="gamename">
+               <pos>0.7 0.0075</pos>
+            </text>
             <badges name="badges">
                <size>0.15 0.15</size>
-               <pos>0.65 0.0415</pos>
+               <pos>0.7 0.0415</pos>
             </badges>
+            <rating name="rating">
+               <pos>0.7 0.075</pos>
+            </rating>
             <text name="playersmetadata">
-               <pos>0.755 0.075</pos>
+               <pos>0.81 0.075</pos>
             </text>
             <text name="players">
-               <pos>0.7125 0.075</pos>
+               <pos>0.765 0.075</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.876 0.036</pos>
             </text>
          </view>
       </aspectRatio>
