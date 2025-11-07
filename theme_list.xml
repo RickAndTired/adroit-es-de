@@ -41,6 +41,7 @@ CC-BY-NC-SA
             <rating>${white}</rating>
             <playeroutline>${white}</playeroutline>
             <listplayers>${white}</listplayers>
+            <playtime>${white}</playtime>
             <videodef>./files/system-controllers/${system.theme}.svg</videodef>
             <backgroundjpg>./none</backgroundjpg>        
             <backgroundgif>./none</backgroundgif>
@@ -71,6 +72,7 @@ CC-BY-NC-SA
             <rating>${gray}</rating>
             <playeroutline>${gray}</playeroutline>
             <listplayers>${gray}</listplayers>
+            <playtime>${gray}</playtime>
             <videodef>./files/system-controllers-light/${system.theme}.svg</videodef>
             <backgroundjpg>./none</backgroundjpg>        
             <backgroundgif>./none</backgroundgif>
@@ -101,6 +103,7 @@ CC-BY-NC-SA
             <rating>${white}</rating>
             <playeroutline>${white}</playeroutline>
             <listplayers>${white}</listplayers>
+            <playtime>${white}</playtime>
             <videodef>./files/system-controllers/${system.theme}.svg</videodef>
             <backgroundjpg>./files/background.jpg</backgroundjpg>        
             <backgroundgif>./files/background.gif</backgroundgif>
@@ -161,13 +164,14 @@ CC-BY-NC-SA
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
-          <pos>0.982 0.06</pos>
+          <pos>0.982 0.02</pos>
           <origin>1 0</origin>
           <!--<fontPath>${font}</fontPath>-->
           <fontSize>0.03</fontSize>
           <color>${white}</color>
       </clock>
       <systemstatus name="sysstatus">
+          <pos>0.982 0.06</pos>
           <color>${white}</color>
       </systemstatus>
       <textlist name="list">
@@ -204,7 +208,7 @@ CC-BY-NC-SA
          <path>./files/logos/${system.theme}.svg</path>
          <pos>0.8125 0.91</pos>
          <origin>0.5 1</origin>
-         <maxSize>0.25 0.15</maxSize>
+         <maxSize>0.25 0.13</maxSize>
          <color>${syslogocolor}</color>
       </image>    
 <!--
@@ -320,7 +324,19 @@ CC-BY-NC-SA
          <pos>0.98125 0.666</pos>
          <color>${listplayers}</color>
       </text>
-
+      <text name="playtime">
+         <origin>0 0</origin>
+         <pos>0.662 0.75</pos>
+         <size>0.3 0.024</size>
+         <metadata>playtime</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <horizontalAlignment>center</horizontalAlignment>
+         <color>${playtime}</color>
+         <lineSpacing>1</lineSpacing>
+         <letterCase>capitalize</letterCase>
+      </text>
       <video name="video">
          <origin>0.5 1</origin>
          <delay>1.9</delay>
@@ -450,6 +466,9 @@ CC-BY-NC-SA
             <text name="players">
                <pos>0.975 0.66375</pos>
             </text>
+            <text name="playtime">
+               <pos>0.625 0.752</pos>
+            </text>
             <video name="video">
                <pos>0.7725 0.75</pos><!-- 870 630 -->
                <maxSize>0.3125 0.4</maxSize><!-- 300 400 -->
@@ -495,6 +514,9 @@ CC-BY-NC-SA
             <text name="players">
                <pos>0.98125 0.66375</pos>
             </text>
+            <text name="playtime">
+               <pos>0.664 0.75</pos>
+            </text>
             <video name="video">
                <pos>0.8125 0.75</pos>
                <maxSize>0.234375 0.4</maxSize><!-- 300 400 -->
@@ -535,6 +557,9 @@ CC-BY-NC-SA
             </image>
             <text name="players">
                <pos>0.98125 0.66375</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.664 0.75</pos>
             </text>
             <video name="video">
                <pos>0.8125 0.75</pos>
@@ -583,6 +608,9 @@ CC-BY-NC-SA
             </image>
             <text name="players">
                <pos>0.975 0.66375</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.625 0.75</pos>
             </text>
             <video name="video">
                <pos>0.7725 0.75</pos><!-- 870 630 -->

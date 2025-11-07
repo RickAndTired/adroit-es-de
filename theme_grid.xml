@@ -144,14 +144,15 @@ CC-BY-NC-SA
           <zIndex>4</zIndex>
       </video>
       <clock name="sysclock">
-          <pos>0.982 0.07</pos>
+          <pos>0.982 0.035</pos>
           <origin>1 0</origin>
-          <!--<fontPath>${font}</fontPath>-->
-          <fontSize>0.03</fontSize>
+          <fontPath>${font}</fontPath>
+          <fontSize>0.025</fontSize>
           <color>${white}</color>
       </clock>
       <systemstatus name="sysstatus">
-          <pos>0.982 0.035</pos>
+          <origin>1 0</origin>
+          <pos>0.982 0.067</pos>
           <color>${white}</color>
       </systemstatus>
 <!--
@@ -212,9 +213,9 @@ CC-BY-NC-SA
       <grid name="gamelist-grid">
          <imageType>cover,marquee,titlescreen</imageType>
          <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
-         <origin>0.5 0.5</origin>
+         <origin>0.5 0.515</origin>
          <pos>0.535 0.5375</pos>
-         <size>0.9 0.825</size>
+         <size>0.9 0.775</size>
          <itemSize>0.1 0.167</itemSize>
          <itemScale>1.325</itemScale>
          <imageRelativeScale>0.95</imageRelativeScale>
@@ -223,6 +224,8 @@ CC-BY-NC-SA
          <fontPath>${font}</fontPath>
          <fontSize>0.02</fontSize>
          <lineSpacing>1.1</lineSpacing>
+		     <itemSpacing>0 0</itemSpacing>
+		     <fractionalRows>true</fractionalRows>
          <!--
          <backgroundImage>./files/images_grid/gamecover.png</backgroundImage>
          <backgroundRelativeScale>0.75</backgroundRelativeScale>
@@ -296,6 +299,30 @@ CC-BY-NC-SA
          <metadataElement>true</metadataElement>
          <text>Players:</text>
       </text>
+      <text name="playtime">
+         <origin>0 0</origin>
+         <pos>0.8615 0.036</pos>
+         <size>0.3 0.024</size>
+         <metadata>playtime</metadata>
+         <defaultValue>:space:</defaultValue>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <horizontalAlignment>left</horizontalAlignment>
+         <color>${white}</color>
+         <lineSpacing>1</lineSpacing>
+         <letterCase>capitalize</letterCase>
+      </text>
+  <!--
+      <text name="playtimelabel">
+         <origin>0 0</origin>
+         <pos>0.8 0.036</pos>
+         <size>0.3 0.024</size>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <color>${white}</color>
+         <text>Playtime:</text>
+      </text>
+  -->
    </view>
 
       <aspectRatio name="16:9">
@@ -320,10 +347,13 @@ CC-BY-NC-SA
                <pos>0.65 0.04</pos>
             </badges>
             <text name="playersmetadata">
-               <pos>0.7875 0.075</pos>
+               <pos>0.785 0.075</pos>
             </text>
             <text name="players">
                <pos>0.73 0.075</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.85 0.036</pos>
             </text>
          </view>
       </aspectRatio>
@@ -337,21 +367,27 @@ CC-BY-NC-SA
          </view>
          <view name="gamelist">
             <text name="gamename">
-               <pos>0.675 0.0075</pos>
+               <pos>0.58 0.0075</pos>
             </text>
             <badges name="badges">
-               <pos>0.675 0.04</pos>
+               <pos>0.58 0.04</pos>
                <size>0.25 0.25</size>
             </badges>
             <rating name="rating">
-               <pos>0.675 0.075</pos>
+               <pos>0.58 0.075</pos>
             </rating>
             <text name="playersmetadata">
-               <pos>0.85 0.075</pos>
+               <pos>0.747 0.075</pos>
             </text>
             <text name="players">
-               <pos>0.775 0.075</pos>
+               <pos>0.68 0.075</pos>
             </text>
+            <text name="playtime">
+               <pos>0.825 0.036</pos>
+            </text>
+            <clock name="sysclock">
+               <pos>0.985 0.035</pos>
+           </clock>
          </view>
       </aspectRatio>
       
@@ -363,14 +399,24 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
+            <text name="gamename">
+               <pos>0.7 0.0075</pos>
+            </text>
             <badges name="badges">
                <size>0.15 0.15</size>
+               <pos>0.7 0.0375</pos>
             </badges>
+            <rating name="rating">
+               <pos>0.7 0.075</pos>
+            </rating>
             <text name="playersmetadata">
-               <pos>0.7475 0.075</pos>
+               <pos>0.795 0.075</pos>
             </text>
             <text name="players">
-               <pos>0.7075 0.075</pos>
+               <pos>0.755 0.075</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.888 0.036</pos>
             </text>
          </view>
       </aspectRatio>
@@ -383,15 +429,24 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
+            <text name="gamename">
+               <pos>0.7 0.0075</pos>
+            </text>
             <badges name="badges">
                <size>0.15 0.15</size>
-               <pos>0.65 0.0415</pos>
+               <pos>0.7 0.0415</pos>
             </badges>
+            <rating name="rating">
+               <pos>0.7 0.075</pos>
+            </rating>
             <text name="playersmetadata">
-               <pos>0.755 0.075</pos>
+               <pos>0.81 0.075</pos>
             </text>
             <text name="players">
-               <pos>0.7125 0.075</pos>
+               <pos>0.765 0.075</pos>
+            </text>
+            <text name="playtime">
+               <pos>0.876 0.036</pos>
             </text>
          </view>
       </aspectRatio>
@@ -399,14 +454,14 @@ CC-BY-NC-SA
       <aspectRatio name="1:1">
          <view name="system,gamelist">
             <text name="prompt">
-               <pos>0.07 0.0125</pos>
+               <pos>0.035 0.025</pos>
             </text>
             <clock name="sysclock">
-               <pos>0.0775 0.004</pos>
+               <pos>0.1 0.004</pos>
                <fontSize>0.0275</fontSize>
            </clock>
            <systemstatus name="sysstatus">
-               <pos>0.275 0.002</pos>
+               <pos>0.3 0.002</pos>
                <height>0.03</height>
           </systemstatus>
          </view>
@@ -431,8 +486,11 @@ CC-BY-NC-SA
             <text name="players">
                <pos>0.805 0.075</pos>
             </text>
+            <text name="playtime">
+               <pos>0.84 0.044</pos>
+            </text>
             <helpsystem name="help">
-                 <fontSize>0.022</fontSize>
+                 <fontSize>0.021</fontSize>
             </helpsystem>  
          </view>
       </aspectRatio>
