@@ -503,7 +503,16 @@ CC-BY-NC-SA
    <variant name="GridLogos">
       <view name="gamelist">
         <grid name="gamelist-grid">
-           <imageType>marquee,cover,titlescreen</imageType> <!--Replace with marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover-->
+           <imageType>marquee,cover,titlescreen,screenshot</imageType> <!--Replace with marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover-->
+           <!--<backgroundColor>${gray}</backgroundColor>-->
+        </grid> 
+      </view>
+   </variant> 
+   
+   <variant name="GridPhysical">
+      <view name="gamelist">
+        <grid name="gamelist-grid">
+           <imageType>physicalmedia,cover,marquee,screenshot</imageType> <!--Replace with marquee,cover,3dbox,physicalmedia,titlescreen,miximage,fanart,screenshot, or backcover-->
            <!--<backgroundColor>${gray}</backgroundColor>-->
         </grid> 
       </view>
