@@ -5,6 +5,9 @@
   <variant name="GridLogos">
     <include>./theme_grid.xml</include>
   </variant>
+  <variant name="GridPhysical">
+    <include>./theme_grid.xml</include>
+  </variant>
   <variant name="List">
     <include>./theme_list.xml</include>
   </variant>
