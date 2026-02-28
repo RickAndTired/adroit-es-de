@@ -108,6 +108,29 @@ CC-BY-NC-SA
         </variables>
     </colorScheme>  
 
+
+   <fontSize name="small">
+      <variables>
+        <gridpos>0.51 0.5375</gridpos>
+        <gridspacing>0.025 0.05</gridspacing>
+      </variables>
+   </fontSize>
+   
+   <fontSize name="medium">
+      <variables>
+        <gridpos>0.515 0.5375</gridpos>
+        <gridspacing>0.005 0.005</gridspacing>
+      </variables>
+   </fontSize>
+   
+   <fontSize name="large">
+      <variables>
+        <gridpos>0.515 0.5375</gridpos>
+        <gridspacing>0.005 0.005</gridspacing>
+      </variables>
+   </fontSize>
+
+
    <view name="system,gamelist">
       <image name="background">
           <origin>0 0</origin>
@@ -214,7 +237,7 @@ CC-BY-NC-SA
          <imageType>cover,marquee,titlescreen</imageType>
          <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
          <origin>0.5 0.515</origin>
-         <pos>0.515 0.5375</pos>
+         <pos>${gridpos}</pos>
          <size>0.9 0.797</size>
          <itemSize>0.1 0.225</itemSize>
          <itemScale>1.325</itemScale>
@@ -224,7 +247,7 @@ CC-BY-NC-SA
          <fontPath>${font}</fontPath>
          <fontSize>0.02</fontSize>
          <lineSpacing>1.1</lineSpacing>
-		     <itemSpacing>0.005 0.005</itemSpacing>
+		     <itemSpacing>${gridspacing}</itemSpacing>
 		     <fractionalRows>true</fractionalRows>
          <!--
          <backgroundImage>./files/images_grid/gamecover.png</backgroundImage>
