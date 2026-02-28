@@ -6,7 +6,7 @@ by Rick
 
 Variants: Grid Covers, Grid Logos, List, List No Art
 
-Color Schemes: Dark, Light, Animated
+Color Schemes: Animated, Dark, Light
 
 Aspect Ratios: 16:9, 16:10, 4:3, 19.5:9, 21:9, 1:1
 
