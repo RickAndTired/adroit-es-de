@@ -214,7 +214,7 @@ CC-BY-NC-SA
          <imageType>cover,marquee,titlescreen</imageType>
          <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
          <origin>0.5 0.515</origin>
-         <pos>0.535 0.5375</pos>
+         <pos>0.515 0.5375</pos>
          <size>0.9 0.797</size>
          <itemSize>0.1 0.225</itemSize>
          <itemScale>1.325</itemScale>
@@ -224,7 +224,7 @@ CC-BY-NC-SA
          <fontPath>${font}</fontPath>
          <fontSize>0.02</fontSize>
          <lineSpacing>1.1</lineSpacing>
-		     <itemSpacing>0 0</itemSpacing>
+		     <itemSpacing>0.005 0.005</itemSpacing>
 		     <fractionalRows>true</fractionalRows>
          <!--
          <backgroundImage>./files/images_grid/gamecover.png</backgroundImage>
@@ -366,6 +366,9 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
+            <text name="system-name">
+               <fontSize>0.035</fontSize>
+            </text>
             <text name="gamename">
                <pos>0.58 0.0075</pos>
             </text>
