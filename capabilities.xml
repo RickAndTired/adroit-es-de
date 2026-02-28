@@ -30,6 +30,10 @@
       <label>Grid Logos</label>
       <selectable>true</selectable>
    </variant>
+   <variant name="GridPhysical">
+      <label>Grid Physical Media</label>
+      <selectable>true</selectable>
+   </variant>
    <variant name="List">
       <label>List</label>
       <selectable>true</selectable>
