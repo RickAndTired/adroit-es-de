@@ -128,7 +128,7 @@ CC-BY-NC-SA
    <fontSize name="large">
       <variables>
         <gridpos>0.515 0.5375</gridpos>
-        <griditemsize>0.1 0.225</griditemsize>
+        <griditemsize>0.1 0.3</griditemsize>
         <gridspacing>0.005 0.005</gridspacing>
       </variables>
    </fontSize>
