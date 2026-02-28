@@ -13,14 +13,14 @@
    <fontSize>medium</fontSize>
    <fontSize>large</fontSize>
 
+   <colorScheme name="Animated">
+      <label>Animated</label>
+   </colorScheme>
    <colorScheme name="Dark">
       <label>Dark</label>
    </colorScheme>
    <colorScheme name="Light">
       <label>Light</label>
-   </colorScheme>
-   <colorScheme name="Animated">
-      <label>Animated</label>
    </colorScheme>
    
    <variant name="Grid">
