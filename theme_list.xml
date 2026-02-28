@@ -111,6 +111,15 @@ CC-BY-NC-SA
         </variables>
     </colorScheme>  
 
+   <fontSize name="small">
+      <variables>
+        <listFontSize>0.02</listFontSize>
+        <helpFontSize>0.02</helpFontSize>
+        <sysPromptFontSize>0.04</sysPromptFontSize>
+        <sysNameFontSize>0.04</sysNameFontSize>
+      </variables>
+   </fontSize>
+   
    <fontSize name="medium">
       <variables>
         <listFontSize>0.025</listFontSize>
