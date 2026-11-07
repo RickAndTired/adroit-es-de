@@ -45,6 +45,7 @@ CC-BY-NC-SA
             <backgroundjpg>./none</backgroundjpg>        
             <backgroundgif>./none</backgroundgif>
             <backgroundmp4>./none</backgroundmp4>
+            <bgm>./none</bgm>
         </variables>
     </colorScheme>
 
@@ -75,6 +76,7 @@ CC-BY-NC-SA
             <backgroundjpg>./none</backgroundjpg>        
             <backgroundgif>./none</backgroundgif>
             <backgroundmp4>./none</backgroundmp4>
+            <bgm>./none</bgm>
         </variables>
     </colorScheme>
 
