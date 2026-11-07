@@ -105,6 +105,7 @@ CC-BY-NC-SA
             <backgroundjpg>./files/background.jpg</backgroundjpg>        
             <backgroundgif>./files/background.gif</backgroundgif>
             <backgroundmp4>./files/background.mp4</backgroundmp4>
+            <bgm>./files/bgm.mp4</bgm>
         </variables>
     </colorScheme>  
 
@@ -168,6 +169,17 @@ CC-BY-NC-SA
           <fadeInType>transparent</fadeInType>
           <audio>false</audio>
           <zIndex>4</zIndex>
+      </video>
+      <video name ="backgroundmusic">
+          <path>${bgm}</path>
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <delay>0</delay>
+          <fadeInTime>0</fadeInTime>
+          <fadeInType>transparent</fadeInType>
+          <audio>true</audio>
+          <zIndex>1</zIndex>
       </video>
       <clock name="sysclock">
           <pos>0.982 0.035</pos>
