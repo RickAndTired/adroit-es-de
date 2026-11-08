@@ -6,7 +6,7 @@ by Rick
 
 Variants: Grid Covers, Grid Logos, List, List No Art
 
-Color Schemes: Animated, Dark, Light
+Color Schemes: Animated with BGM, Animated, Dark, Light
 
 Aspect Ratios: 16:9, 16:10, 4:3, 19.5:9, 21:9, 1:1
 
@@ -38,11 +38,13 @@ Place your own `background.mp4` or `background.gif` inside
 
 (If you use an mp4 - also include a screenshot of the first frame as `background.jpg`)
 
-You can use a `background.mp4` with audio to get background music
+<hr/>
 
-You can enable the `background.mp4` audio by changing `<audio>false</audio>` to true - `theme_grid.xml` line `143` and `theme_list.xml` line `163`
+Animated with BGM has background music, but only on the grid variants for now.
 
-Background music and game video audio do not play well together - if you want to keep the background music you can disable the game video audio in `theme_list.xml` line `345`
+Adjust BGM volume in - Main menu - Sound Settings - Video Player Volume
+
+You can use your own background music by replacing bgm.mp4 with your own file.
 
 <hr/>
 
@@ -55,3 +57,11 @@ Akashi Font Author: Ten by Twenty
 SIL Open Font Licese v1.10
 
 Background video by [Gam-Ol](https://pixabay.com/videos/element-joystick-joypad-line-cross-67116/) under the Pixabay Content License
+
+Background music
+```
+Lo-Fi - Sunset
+by AurosonMusic
+https://freemusicarchive.org/music/aurosonmusic/single/lo-fi-sunset/
+CC BY 4.0
+```
