@@ -46,6 +46,8 @@ Adjust BGM volume in - Main menu - Sound Settings - Video Player Volume
 
 You can use your own background music by replacing bgm.mp4 with your own file.
 
+Limitation of the current system is that the music restarts when cycling through systems.
+
 <hr/>
 
 This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
