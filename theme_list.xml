@@ -27,8 +27,8 @@ CC-BY-NC-SA
             <listselectedbgcolor>${white}</listselectedbgcolor>
             <listprimarycolor>${white}</listprimarycolor>
             <listsecondarycolor>${manila}</listsecondarycolor>
-          <selectedSecondaryColor>${gray}</selectedSecondaryColor>
-          <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+            <selectedSecondaryColor>${gray}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
             <gridimagecolor>${white}</gridimagecolor>
             <gridselectorcolor>${white}</gridselectorcolor>
             <gridimageselectedcolor>${gray}</gridimageselectedcolor>
@@ -46,6 +46,7 @@ CC-BY-NC-SA
             <backgroundjpg>./none</backgroundjpg>        
             <backgroundgif>./none</backgroundgif>
             <backgroundmp4>./none</backgroundmp4>
+            <bgm>./none</bgm>
         </variables>
     </colorScheme>
 
@@ -57,8 +58,8 @@ CC-BY-NC-SA
             <listselectedbgcolor>${gray}</listselectedbgcolor>
             <listprimarycolor>${gray}</listprimarycolor>
             <listsecondarycolor>${black}</listsecondarycolor>
-          <selectedSecondaryColor>${white}</selectedSecondaryColor>
-          <selectedSecondaryBackgroundColor>${gray}</selectedSecondaryBackgroundColor>
+            <selectedSecondaryColor>${white}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${gray}</selectedSecondaryBackgroundColor>
             <gridimagecolor>${gray}</gridimagecolor>
             <gridselectorcolor>${gray}</gridselectorcolor>
             <gridimageselectedcolor>${white}</gridimageselectedcolor>
@@ -77,6 +78,7 @@ CC-BY-NC-SA
             <backgroundjpg>./none</backgroundjpg>        
             <backgroundgif>./none</backgroundgif>
             <backgroundmp4>./none</backgroundmp4>
+            <bgm>./none</bgm>
         </variables>
     </colorScheme>
     
@@ -89,8 +91,8 @@ CC-BY-NC-SA
             <listselectedbgcolor>${white}</listselectedbgcolor>
             <listprimarycolor>${white}</listprimarycolor>
             <listsecondarycolor>${manila}</listsecondarycolor>
-          <selectedSecondaryColor>${gray}</selectedSecondaryColor>
-          <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+            <selectedSecondaryColor>${gray}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
             <gridimagecolor>${white}</gridimagecolor>
             <gridselectorcolor>${white}</gridselectorcolor>
             <gridimageselectedcolor>${gray}</gridimageselectedcolor>
@@ -108,6 +110,39 @@ CC-BY-NC-SA
             <backgroundjpg>./files/background.jpg</backgroundjpg>        
             <backgroundgif>./files/background.gif</backgroundgif>
             <backgroundmp4>./files/background.mp4</backgroundmp4>
+            <bgm>./none</bgm>
+        </variables>
+    </colorScheme>  
+    
+   <colorScheme name="AnimatedBGM">
+        <variables>
+            <backgroundimage>./none</backgroundimage>
+            <gamelisttextcolor>${white}</gamelisttextcolor>
+            <controllerpath>./files/system-controllers/${system.theme}.svg</controllerpath>
+            <listselectedcolor>${black}</listselectedcolor>
+            <listselectedbgcolor>${white}</listselectedbgcolor>
+            <listprimarycolor>${white}</listprimarycolor>
+            <listsecondarycolor>${manila}</listsecondarycolor>
+            <selectedSecondaryColor>${gray}</selectedSecondaryColor>
+            <selectedSecondaryBackgroundColor>${white}</selectedSecondaryBackgroundColor>
+            <gridimagecolor>${white}</gridimagecolor>
+            <gridselectorcolor>${white}</gridselectorcolor>
+            <gridimageselectedcolor>${gray}</gridimageselectedcolor>
+            <gamelistgridtext>${white}</gamelistgridtext>
+            <controllercolor>${white}</controllercolor>
+            <syslogocolor>${white}</syslogocolor>
+            <listbadgeiconcolor>${white}</listbadgeiconcolor>
+            <listfolderlinkiconcolor>${white}</listfolderlinkiconcolor>
+            <ratingoutline>${white}</ratingoutline>
+            <rating>${white}</rating>
+            <playeroutline>${white}</playeroutline>
+            <listplayers>${white}</listplayers>
+            <playtime>${white}</playtime>
+            <videodef>./files/system-controllers/${system.theme}.svg</videodef>
+            <backgroundjpg>./files/background.jpg</backgroundjpg>        
+            <backgroundgif>./files/background.gif</backgroundgif>
+            <backgroundmp4>./files/background.mp4</backgroundmp4>
+            <bgm>./none</bgm>
         </variables>
     </colorScheme>  
 
