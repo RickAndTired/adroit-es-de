@@ -4,7 +4,7 @@ Adroit ES-DE Theme
 
 by Rick
 
-Variants: Grid Covers, Grid Logos, List, List No Art
+Variants: Grid Covers, Grid Logos, Grid Physical, List, List No Art
 
 Color Schemes: Animated with BGM, Animated, Dark, Light
 
